@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="9500px=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/rest.css">
+    <script>
+        resetFontSize();
+
+        // 当浏览器大小变化的时候触发
+        window.onresize = function () {
+            resetFontSize();
+        }
+        /**
+         * 根据浏览器宽度重新设置 html font-szie大小
+         **/
+        function resetFontSize() {
+            // 浏览器宽度 1/10
+            document.documentElement.style.fontSize = window.innerWidth / 10 + 'px';
+            console.log('html font-size重置为: ' + window.innerWidth / 10);
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 头部  -->
+    <div class="header">
+        <a href="#" class="logo"></a>
+        <p class="mas">郑州高端互联网技术培训</p>
+        <a href="#" class="introduce">
+        </a>
+        <div class="quick">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">关于</a></li>
+                <li><a href="#">介绍</a></li>
+                <li><a href="#">环境</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">就业</a></li>
+                <li><a href="#">优势</a></li>
+                <li><a href="#">联系</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 关于 -->
+    <div class="banner">
+        <div class="student"></div>
+        <p class="our">关于我们</p>
+        <span class="stick"></span>
+        <p class="text">Course</p>
+        <div class="bufan"></div>
+        <div class="box2">
+            <p class="mas1">不凡学院老师由一帮80后老北漂组成。我们分别来自于腾讯网，凤凰网，网易
+                等北京知名互联网公司，我们都曾奋斗在一线岗位，都曾面试新人，带新人，深知公司需要什么样的人才。我们会通过实战项目结合
+                培训的教学模式，把知名互联网公司的工作流程，设计方法，开发方 式手把手的教给大家，在不凡学习就相当于工作，高薪就业你也行！</p>
+        </div>
+        <div class="ui">
+            <p class="design">UI设计</p>
+            <div class="direction">
+                就业方向：网页设计，APP设计，管理系统软件设计
+                智能电视，车载系统，智能穿戴设备等软件设计
+            </div>
+            <div class="details">课程详情</div>
+            <div class="ui-design">
+                <p>UI设计精品班</p>
+                <p class="ui-mas">
+                    课程周期：3个月<br>
+                    上课时间：周一至周五<br>
+                    招生对象：大专以上学历<br>
+                    班级人数：每班限制15人
+                </p>
+                <div class="ui-close">X</div>
+            </div>
+        </div>
+        <div class="Development">
+            <p class="Development-h">H5前端开发</p>
+            <div class="Development-direction">
+                就业方向：网站开发，网页特效开发，APP开发
+                微信小程序开发，网页游戏开发，移动WEB开发
+            </div>
+            <div class="Development-k">课程详情</div>
+            <div class="Development-design">
+                <p>H5前端开发</p>
+                <p class="Development-mas">
+                    课程周期：3个月<br>
+                    上课时间：周一至周五<br>
+                    招生对象：大专以上学历<br>
+                    班级人数：每班限制15人
+                </p>
+                <div class="Development-close">X</div>
+            </div>
+        </div>
+    </div>
+    <!-- 教育环境 -->
+    <div class="Teaching">
+        <p class="our">教育环境</p>
+        <span class="stick"></span>
+        <p class="text">Course</p>
+        <!-- 展示Exhibition -->
+        <div class="exhibition">
+            <div class="logo1">
+                <div class="grade"></div>
+                <p class="logo-mas">不凡学院</p>
+                <span class="logo-mas1">
+                    平凡人的不平凡<br>
+                    我们在学院等你
+                </span>
+            </div>
+            <div class="logo2">
+                <p class="logo-mas">全Mac教学</p>
+                <span class="logo-mas1">
+                    全MAC设备，
+                    与一线互联网公司设备同步，
+                    提前适应工作环境！
+                </span>
+                <div class="grade1"></div>
+            </div>
+            <div class="logo3">
+                <div class="grade"></div>
+                <p class="logo-mas">休息脚</p>
+                <span class="logo-mas1">
+                    小资的学习环境<br>
+                    引爆你的设计灵感！
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 作品 -->
+    <div class="swiper-mas">
+        <p class="our">学员作品</p>
+        <span class="stick"></span>
+        <p class="text">Design</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/show1.png" height="171" alt="">
+                    <img src="img/show2.png" height="171" alt="">
+                    <img src="img/show3.png" height="171" alt="">
+                    <img src="img/show4.png" height="171" alt="">
+                    <img src="img/show5.png" height="171" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/show1.png" height="171" alt="">
+                    <img src="img/show2.png" height="171" alt="">
+                    <img src="img/show3.png" height="171" alt="">
+                    <img src="img/show4.png" height="171" alt="">
+                    <img src="img/show5.png" height="171" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/show1.png" height="171" alt="">
+                    <img src="img/show2.png" height="171" alt="">
+                    <img src="img/show3.png" height="171" alt="">
+                    <img src="img/show4.png" height="171" alt="">
+                    <img src="img/show5.png" height="171" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/show1.png" height="171" alt="">
+                    <img src="img/show2.png" height="171" alt="">
+                    <img src="img/show3.png" height="171" alt="">
+                    <img src="img/show4.png" height="171" alt="">
+                    <img src="img/show5.png" height="171" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/show1.png" height="171" alt="">
+                    <img src="img/show2.png" height="171" alt="">
+                    <img src="img/show3.png" height="171" alt="">
+                    <img src="img/show4.png" height="171" alt="">
+                    <img src="img/show5.png" height="171" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- 学员就业 -->
+    <div class="work">
+        <p class="our">学员就业</p>
+        <span class="stick"></span>
+        <p class="text">Employment</p>
+        <img src="img/em_2.jpg" alt="" class="work-logo">
+        <img src="img/em_3.jpg" alt="" class="work-logo">
+        <img src="img/em_1.jpg" alt="" class="work-logo">
+    </div>
+    <!-- 师资优势 -->
+    <div class="advantage">
+        <p class="our">师资优势</p>
+        <span class="stick"></span>
+        <p class="text">Teacher</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/show1.png" height="311" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/show2.png" height="311" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/show4.png" height="311" alt="" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div><!-- 分页器图片下面的小圆点 -->
+        </div>
+
+    </div>
+    <!-- 课程优势 -->
+    <div class="project">
+        <p class="our">课程优势</p>
+        <span class="stick"></span>
+        <p class="text">Superiority</p>
+        <div class="project-mas">
+            <div class="project-logo"></div>
+            <p class="project-words">最真的项目案例</p>
+            <p class="project-word1">
+                接触真实的项目实战,
+                全面了解实际工作<br>流程,
+                学习就等于工作</p>
+        </div>
+        <div class="project-mas">
+            <div class="project-logo one"></div>
+            <p class="project-words">最好的教学师资</p>
+            <p class="project-word1">
+                北京知名一线互联网公司资深设计师担任讲师，现场面授！</p>
+        </div>
+        <div class="project-mas">
+            <div class="project-logo two"></div>
+            <p class="project-words">最精品的班级设置</p>
+            <p class="project-word1">
+                每期每班15人，手把手教学，保证每位同学学好学会！</p>
+        </div>
+        <div class="project-mas">
+            <div class="project-logo three"></div>
+            <p class="project-words">最严的质量管控</p>
+            <p class="project-word1">
+                对学员进行阶段性考核，对每个学员负责保证学员学好学会</p>
+        </div>
+        <div class="project-mas">
+            <div class="project-logo four"></div>
+            <p class="project-words">最开放的教学方式</p>
+            <p class="project-word1">
+                分组交流实践，差异化辅导教学，活泼轻松的课堂气氛！</p>
+        </div>
+        <div class="project-mas ">
+            <div class="project-logo five"></div>
+            <p class="project-words">最牛的大咖讲座</p>
+            <p class="project-word1">
+                定期邀请北京业内大咖开设讲座，满满全是干货！</p>
+        </div>
+
+    </div>
+    <!-- 联系我们 -->
+    <div class="contact">
+        <p class="our">联系我们</p>
+        <span class="stick"></span>
+        <p class="text">Contact us</p>
+        <div class="address">
+            <img src="img/address.png" alt="">
+            <p>地址</p>
+            <p class="address-mas">郑州市郑东新区金水东路绿地新都会6号楼1210</p>
+        </div>
+        <div class="address">
+            <img src="img/way_@2x.png" alt="">
+            <p>乘车路线</p>
+            <p class="address-mas">地铁1号线 东风南路站C口出向北步行300米即到(近郑州东站)</p>
+        </div>
+        <div class="address">
+            <img src="img/phone_@2x.png" alt="">
+            <p>电话</p>
+            <p class="address-mas">座机: 0371-55602883 移动电话: 18838180363</p>
+        </div>
+        <div class="Consultation">
+            <p><a href="#">咨询</a></p>
+        </div>
+        <div class="home"><a href="#">回去</a></div>
+
+    </div>
+
+    <script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+    <script src="lib/swiper-3.4.2.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000, //可选选项，自动滑动
+            speed: 300, //速度
+            initialSlide: 1, //初始停留在第几个页面
+            spaceBetween: 40, //盒子与盒子的间距
+            direction: 'horizontal', //Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)。
+            loop: true, //无限轮播
+            pagination: '.swiper-pagination', //分页器图片下面的小圆点
+            paginationClickable: true, //点击小圆点
+        })
+    </script>
+    <script type="text/javascript">
+        var btn1 = document.querySelector('.introduce');
+        var d1 = document.querySelector('.quick');
+
+        btn1.onclick = function () {
+            d1.style.display = 'block';
+        }
+        d1.onclick = function () {
+            d1.style.display = 'none';
+        }
+        $('.details').click(function () {
+            $('.ui-design').addClass('active');
+        })
+        $('.ui-close').click(function () {
+            $('.ui-design').removeClass('active');
+        })
+        $('.Development-k').click(function () {
+            console.log('出现');
+            $('.Development-design').addClass('active');
+        })
+        $('.Development-close').click(function () {
+            $('.Development-design').removeClass('active');
+        })
+        $('.contact .home').click(function () {
+            // $(document.documentElement).scrollTop(0);
+            $(document.documentElement).animate({
+                scrollTop: 0
+            }, 400, 'swing');
+        })
+    </script>
+</body>
+
+</html>
