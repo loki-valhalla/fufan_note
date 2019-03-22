@@ -84,7 +84,7 @@
   
   ```
   1.获取第一个子节点
-  ```
+  
        - pnode.firstChild;
      // 兼容同previousSibling
 
@@ -93,4 +93,64 @@
         - 兼容写法:
         pnode.firstElmentChild || pnode.firstChild;
     ```
+   ```
+   2. 获取最后一个子节点 :
 
+   - pnode.lastChild;
+   //兼容同上
+
+   -pnode.lastElementChild;
+
+   -兼容写法:
+   pnode.lastElementChild || pnode.lastChild;
+   ```
+   ```
+   3.获取所有子节点:
+
+     - pnode.childNodes
+            // 返回所有类型的子节点集合
+
+            - pnode.children
+            // 返回元素子节点,但ie9以下包含注释节点
+
+     4. 判断节点类型, nodeType:
+
+            - node.nodeType == 1, 表示元素节点
+
+            - node.nodeType == 2, 表示属性节点
+
+            - node.nodeType == 3, 表示文本节点
+
+            - node.nodeType == 8, 表示注释节点        
+      5. 兼容:
+
+            function getChildren(pNode){
+
+                var nodes =  pNode.children;
+
+                var elNodes = [];
+
+                for(var i = 0 ; i < nodes.length ; i++ ){
+
+                    if(nodes[i].nodeTyoe == 1){
+
+                        elNodes.push(nodes[i]);
+                    }
+                }
+
+                return elNodes;
+            }
+    ```
++ 节点操作:
+```
+- 获取节点都是属性,操作节点都是函数/方法;
+
+1. 创建节点
+
+- document.createElement();
+// 创建节点之后不会显示到页面上,要配合插入节点使用;
+
+2. 插入子节点
+
+- pNode.appendChild(cNode);
+//按先后顺序插入
