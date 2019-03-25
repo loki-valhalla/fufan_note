@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+       <script>
+        //    数组去重
+           var arr = [1, 2, 3, 2, 1, 1, 1, 3, 3, 3, 4, 4, 2, 5];
+
+        //    先遍历第一遍数组,从第一开始循环
+           for (var i = 0; i < arr.length; i++) {
+            //   在遍历第二遍数组,从i+1个开始循环,查看重复的数
+               for (var j = i + 1; j < arr.length; j++) {
+                //    如果第I个下标的数和第J的下标的数一样的话
+                   if (arr[i] == arr[j]) {
+                    //    去掉第J个数,指删除一个
+                       arr.splice(j, 1);
+                    //   假如有重复的话,j-1,这样J的个数先减少了1个但当循环完毕后回到J的循环时回在+1,这样一加一减变成0这样就重复检查了一遍
+                       j--
+                       console.log(arr);
+                   }
+               }
+           }
+           console.log(arr);
+       </script>
+</body>
+</html>

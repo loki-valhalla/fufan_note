@@ -141,7 +141,9 @@
                 return elNodes;
             }
     ```
+
 + 节点操作:
+  
 ```
 - 获取节点都是属性,操作节点都是函数/方法;
 
@@ -154,3 +156,56 @@
 
 - pNode.appendChild(cNode);
 //按先后顺序插入
+
+- pNopde.insertBefore(cNode,参照节点);
+// 如果参照节点为null,则会按先后顺序插入到最后
+
+ 3. 删除子节点
+
+            - pNode.removeChild(cNode);
+
+            - pnode.parentNode.removeChild(cNode);
+            // 自己删除自己
+
+        4. 克隆节点:
+
+            - node.cloneNode() 
+            // 浅克隆,不传参数时为浅克隆,浅克隆不会复制后代节点;
+
+            - node.cloneNode(true)
+            // 深克隆,参数为true为深克隆,会克隆后代节点
+   ```
+  + 节点属性操作:
+
+```
+1.获取属性:
+-node.getAttribute(属性名);
+
+2.设置属性:
+
+-node.setAttribute(属性名,属性值);
+
+3.删除属性:
+
+- node.removeAttribute(属性名);
+```
++ value/ innerHTML / innerText / textContent
+
+```
+- value 属性只对表单有效;
+- innerHTML 会解析标签,innerText不会解析标签;
+- innerText 和 textContect用法相同,但后者较老可以支持老版本的火狐;
+- 使用innerHTML追加元素会使之前的元素绑定的事件失效;
+```
+
++ 其他常用属性
+  ```
+  -doucument.body, 可以直接获取body标签;
+
+  - document.documentElement,可以直接获取html标签;
+
+  - document.all,获取document文档下所有的标签(直接打印返回值结果是undefined,类型也是undefined)但是可以通过索引获取到值;
+  ```
+  + 操作样式:
+  ```
+  - 通过node.style 读写样式操作的都是内联样式,这种方式无法获取到内联以外的样式;
