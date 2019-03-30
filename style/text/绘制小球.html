@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		#cvs1 {
+			display: block;
+
+			margin: 100px auto;
+		}
+	</style>
+</head>
+
+<body>
+
+	<canvas id="cvs1" width="1500" height="1500">
+		对不起,您的浏览器不支持!
+	</canvas>
+	<script type="text/javascript" src="lib/ball2.js"></script>
+	<script>
+		// 1. 获取标签
+		var cvs = document.querySelector('#cvs1');
+		// 2.获取上下文对象
+		var ctx = cvs.getContext("2d");
+
+	    // 设置一个空的函数
+		var ballList = [];
+		// 循环小球个数，添加进空的函数中。
+		for (var i = 0; i < 100; i++) {
+			ballList.push(new Ball(cvs, 100, 100, rd(), rgb()));
+		}
+
+        // 清除画布,清除后开启动画
+		setInterval(function () {
+			ctx.clearRect(0, 0, cvs.width, cvs.height);
+			for (var i = 0; i < ballList.length; i++) {
+				ballList[i].play();
+			}
+		}, 17)
+
+        //   小球颜色
+		function rgb() {
+			function rd() {
+				return Math.floor(Math.random() * 256);
+			}
+			var rs = 'rgb(' + rd() + ',' + rd() + ',' + rd() + ')';
+			return rs;
+		}
+
+        // 小球大小
+		function rd() {
+			return Math.floor(Math.random() * 50 + 20);
+		}
+
+
+
+
+	</script>
+</body>
+
+</html>

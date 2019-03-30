@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#cvs1{
+			display: block;
+			border: 1px solid red;
+			margin: 100px auto;
+		}
+	</style>
+</head>
+<body>
+	
+	<canvas id="cvs1" width="500" height="500">
+		对不起,您的浏览器不支持!
+	</canvas>
+	<script>
+		// 1. 获取标签
+		var cvs = document.querySelector('#cvs1');
+		// 2.获取上下文对象
+		var ctx = cvs.getContext("2d");
+		var ballObj = {
+			cx: 50,
+			cy: 50,
+			r: 50,
+			color: 'green',
+			stepX: rdStep(),
+			stepY: rdStep()
+		}
+		ctx.fillStyle = ballObj.color;
+		var ball = ctx.arc(ballObj.cx,ballObj.cy, ballObj.r, 0, Math.PI*2, false);
+		ctx.fill();
+		setInterval(function(){
+          
+          if(ballObj.cx-ballObj.r<=0){
+          	ballObj.stepX = Math.abs(ballObj.stepX);
+          }
+          if (ballObj.cs+ballObj.r>=cvs.width){
+            ballObj.stepX = -1*Math.abs(ballObj.stepX);
+          }
+          if(ballObj.cy-ballObj.r<=0){
+          	ballObj.stepY = Math.abs(ballObj.stepY);
+          }
+          if (ballObj.cy+ballObj.r>=cvs.height){
+            ballObj.stepY = -1*Math.abs(ballObj.stepY);
+          }
+          
+		},17)
+		function rdStep(){
+        	return Math.floor(Math.random()*10)+1;
+        }
+	
+	</script>
+</body>
+</html>
