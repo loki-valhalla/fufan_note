@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+    .sun{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+        margin-top: -50px;
+        background-color: yellow;
+        border-radius: 50%;
+        box-shadow: 0 0 50px 2px yellow;
+        z-index: 999;
+    }
+    .shen{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+        margin-top: -100px;
+        border: 2px solid white;
+        border-radius: 50%;
+        z-index: 980;
+        animation: an1 10s linear infinite ;
+    }
+    .shen .water{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: aqua;
+        border-radius: 50%;
+        transform: translate(120%,120%);
+    }
+    .shen1{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 300px;
+        height: 300px;
+        margin-top: -150px;
+        margin-left: -150px;
+        border: 2px solid white;
+        border-radius: 50%;
+        animation: an2 15s linear infinite ;
+        z-index: 970;
+    }
+    .shen1 .jin{
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-left: -25px;
+        margin-top: -25px;
+        background-color: gold;
+        border-radius: 50%;
+        transform: translate(120%,120%);
+    }
+    .shen2{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -230px;
+        margin-top: -230px;
+        width: 450px;
+        height: 450px;
+        border: 2px solid white;
+        border-radius: 50%;
+        animation: an1 20s linear infinite ;
+         z-index: 960;
+    }
+    .shen2 .earth{
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: blue;
+        border-radius: 50%;
+        transform: translate(120%,120%);
+    }
+    .shen2 .earth .moon{
+        position: absolute;
+        display: block;
+        width: 15px;
+        height: 15px;
+        margin-left: -10px;
+        background-color: aliceblue;
+        border-radius: 50%; 
+    }
+    .shen3{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -275px;
+        margin-top: -275px;
+        width: 550px;
+        height: 550px;
+        border: 2px solid white;
+        border-radius: 50%;
+        animation: an1 25s linear infinite ;
+        z-index: 950;
+    }
+    .shen3 .huo{
+        left: 50%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-left: 60px;
+        margin-top: 60px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    .shen4{
+         position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -335px;
+        margin-top: -335px;
+        width: 670px;
+        height: 670px;
+        border: 2px solid white;
+        border-radius: 50%;
+        animation: an1 35s linear infinite ;
+        z-index: 940;
+    }
+    .shen4 .tree{
+        left: 50%;
+        top: 50%;
+        width: 70px;
+        height: 70px;
+        margin-left: 60px;
+        margin-top: 60px;
+        background-color: chocolate;
+        border-radius: 50%;
+    }
+     .shen5{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -415px;
+        margin-top: -415px;
+        width: 830px;
+        height: 830px;
+        border: 2px solid white;
+        border-radius: 50%;
+        animation: an1 50s linear infinite ;
+        z-index: 930;
+    }
+    .shen5 .tu{
+        left: 50%;
+        top: 50%;
+        width: 85px;
+        height: 85px;
+        margin-left: 50px;
+        margin-top: 90px;
+        background-color: lightsalmon;
+        border-radius: 50%;
+    }
+      .shen6{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -525px;
+        margin-top: -525px;
+        width: 1050px;
+        height: 1050px;
+        border: 2px solid white;
+        border-radius: 50%;
+        animation: an2 65s linear infinite ;
+        z-index: 920;
+    }
+    .shen6 .tian{
+        left: 50%;
+        top: 50%;
+        width: 95px;
+        height: 95px;
+        margin-left: 50px;
+        margin-top: 160px;
+        background-color: cornflowerblue;
+        border-radius: 50%;
+    }
+     .shen7{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -650px;
+        margin-top: -650px;
+        width: 1300px;
+        height: 1300px;
+        border: 2px solid white;
+        border-radius: 50%;
+        animation: an1 80s linear infinite ;
+        z-index: 910;
+    }
+    .shen7 .hai{
+        left: 50%;
+        top: 50%;
+        width: 105px;
+        height: 105px;
+        margin-left: 130px;
+        margin-top: 130px;
+        background-color: aqua;
+        border-radius: 50%;
+    }
+     .shen8{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -800px;
+        margin-top: -800px;
+        width: 1600px;
+        height: 1600px;
+        border: 2px solid white;
+        border-radius: 50%;
+        animation: an1 100s linear infinite ;
+        z-index: 900;
+    }
+    .shen8 .ming{
+        left: 50%;
+        top: 50%;
+        width: 80px;
+        height: 80px;
+        margin-left: 190px;
+        margin-top: 190px;
+        background-color: rosybrown;
+        border-radius: 50%;
+    }
+      @keyframes an1 {
+            0%{
+                 transform:rotate(0);
+            }
+
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+     
+     @keyframes an2 {
+            0%{
+                 transform:rotate(0);
+            }
+
+            100%{
+                transform:rotate(-360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="shen">
+        <div class="water"></div>
+    </div>
+    <div class="shen1">
+        <div class="jin"></div>
+    </div>
+    <div class="shen2">
+    <div class="earth">
+        <span class="moon"></span>
+    </div>
+    </div>
+    <div class="shen3">
+      <div class="huo"></div>
+    </div>
+    <div class="shen4">
+       <div class="tree"></div>
+    </div>
+    <div class="shen5" >
+        <div class="tu"></div>
+    </div>
+    <div class="shen6">
+         <div class="tian">
+
+         </div>
+    </div>
+    <div class="shen7">
+        <div class="hai">
+    
+        </div>
+    </div>
+    <div class="shen8">
+        <div class="ming">
+    
+        </div>
+    </div>
+    
+</body>
+</html>

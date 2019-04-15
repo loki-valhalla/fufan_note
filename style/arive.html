@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		.top{
+			width: 100%;
+			height: 76px;
+		}
+		.top .top-apple{
+			position: relative;
+			width: 1200px;
+			height: 76px;
+			margin: 0 auto;
+			background-color: #fdfcfc;
+			background: url(img/manlv.png) no-repeat 0 0;
+		}
+		.top .top-apple .top-masage{
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			;
+		}
+		.top .top-apple .top-masage li{
+			float: left;
+			margin-top: 34px;
+		}
+		.top .top-apple .top-masage li a{
+			display: block;
+			width: 72px;
+			height: 32px;
+			font-size: 16px;
+			color: #818181;
+			margin-left: 30px
+		}
+		.top .top-apple .top-masage li a:hover{
+			border-bottom: 2px solid #00daed;
+			color: #00daed;
+		}
+		.header{
+			width: 100%;
+			height: 626px;
+			background: url(img/626.png) no-repeat center;
+		}
+		.header .header-our{
+			position: relative;
+			width: 1200px;
+			height: 626px;
+			margin: 0 auto;
+		}
+		.header .header-our .header-pair{
+			text-align: center;
+			line-height: 626px;
+			font-size: 24px;
+			color: #fff;
+		}
+		.header .header-our .header-1{
+			position: absolute;
+			bottom: 310px;
+			left: 360px;
+			width: 128px;
+			height: 4px;
+			background-color: #fff;
+		}
+		.header .header-our .header-2{
+			position: absolute;
+			bottom: 310px;
+			right: 368px;
+			width: 128px;
+			height: 4px;
+			background-color: #fff;
+		}
+		.header .header-our .seed{
+			position: absolute;
+			bottom: 40px;
+		    left: 530px;
+		    height: 20px;
+		}
+		.header .header-our .seed li{
+			float: left;
+			width: 16px;
+			height: 16px;
+			border: 3px solid white;
+			border-radius: 50%;
+			margin-left: 20px;
+		}
+		.header .header-our .seed li a{
+			display: block;
+			width: 16PX;
+			height: 16PX;
+			background-color: white;
+			opacity: 0.5
+		}
+		.header .header-our .seed li:hover{
+			background-color:white;
+		}
+		.contare{
+			width: 100%;
+			height: 1148px;
+		}
+		.contare .contare-sb{
+			position: relative;
+			width: 1200px;
+			height: 1148px;
+			margin: 100px auto;
+		}
+		.contare .contare-sb .contare-bc{
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 24px;
+			color: #3b3b3b;
+			font-weight: bolder;
+			background: url(img/bluef.png) no-repeat -10px 10px;
+		}
+		.contare .contare-sb .contare-cnm{
+			position: absolute;
+			left: 0;
+			top: 30px;
+			font-size: 14px;
+			color: #c7c7c7;
+		}
+		.contare .contare-sb .logo{
+			position: absolute;
+			left: 0;
+			top: 107px;
+			width:360px;
+			height: 253px;
+			background:url(img/360-253.png) no-repeat center;
+ 		}
+ 		.contare .contare-sb .logo .logo-sb{
+ 			position: absolute;
+ 			bottom: 40px;
+ 			left: 20px;
+ 			width: 358px;
+ 			height: 250px;
+ 			border: 3px solid #e7e7e7; 
+ 		}
+ 		.contare .contare-sb .days{
+ 			position: absolute;
+ 			right: 0;
+ 			top: 148px;
+ 			width: 818px;
+ 			height: 167px;
+ 			background-color: #fbfbfb;
+ 		}
+ 		.contare .contare-sb .days .days-1{
+ 			font-size: 22px;
+ 			color: #404040;
+ 			text-align: center;
+ 			line-height: 110px;
+ 		}
+ 		.contare .contare-sb .days .days-2{
+ 			font-size: 14px;
+ 			color: #515254;
+ 			text-align: center;
+ 			line-height: 0px;
+ 		}
+ 		.contare .contare-sb .days .days-3{
+ 			font-size: 14px;
+ 			color: #626365;
+ 			text-align: center;
+ 			line-height: 60px;
+ 		}
+ 		.contare .contare-sb .logo-wc{
+			position: absolute;
+			right: 0;
+			top: 383px;
+			width:363px;
+			height: 253px;
+			background:url(img/363-253.png) no-repeat center;
+ 		}
+ 		.contare .contare-sb .logo-wc .logo-nm{
+ 			position: absolute;
+ 			bottom: 40px;
+ 			right: 20px;
+ 			width: 358px;
+ 			height: 250px;
+ 			border: 3px solid #e7e7e7; 
+ 		}
+ 		.contare .contare-sb .city{
+ 			position: absolute;
+ 			left: 0;
+ 			top: 426px;
+ 			width: 818px;
+ 			height: 167px;
+ 			background-color: #fbfbfb;
+ 		}
+ 		.contare .contare-sb .city .city-1{
+ 			font-size: 22px;
+ 			color: #404040;
+ 			text-align: center;
+ 			line-height: 110px;
+ 		}
+ 		.contare .contare-sb .city .city-2{
+ 			font-size: 14px;
+ 			color: #515254;
+ 			text-align: center;
+ 			line-height: 0px;
+ 		}
+ 		.contare .contare-sb .city .city-3{
+ 			font-size: 14px;
+ 			color: #626365;
+ 			text-align: center;
+ 			line-height: 60px;
+ 		}
+ 		.contare .contare-sb .logo-nmb{
+			position: absolute;
+			left: 0px;
+			bottom: 150px;
+			width:359px;
+			height:253px;
+			background:url(img/359.253.png) no-repeat center;
+ 		}
+ 		.contare .contare-sb .logo-nmb .logo-mdorange{
+ 			position: absolute;
+ 			bottom: 40px;
+ 			left: 20px;
+ 			width: 358px;
+ 			height: 250px;
+ 			border: 3px solid #e7e7e7; 
+ 		}
+ 		.contare .contare-sb .orange{
+ 			position: absolute;
+ 			right: 0;
+ 			bottom:181px;
+ 			width: 818px;
+ 			height: 167px;
+ 			background-color: #fbfbfb;
+ 		}
+ 		.contare .contare-sb .orange .orange-1{
+ 			font-size: 22px;
+ 			color: #404040;
+ 			text-align: center;
+ 			line-height: 110px;
+ 		}
+ 		.contare .contare-sb .orange .orange-2{
+ 			font-size: 14px;
+ 			color: #515254;
+ 			text-align: center;
+ 			line-height: 0px;
+ 		}
+ 		.contare .contare-sb .orange .orange-3{
+ 			font-size: 14px;
+ 			color: #626365;
+ 			text-align: center;
+ 			line-height: 60px;
+ 		}
+ 		.contare .contare-sb .box{
+ 			position: absolute;
+ 			bottom: 0;
+ 			left: 406px;
+ 			width: 386px;
+ 			height: 67px;
+ 			background-color: #fff;
+ 			border: 2px solid #f2f2f2;
+ 			border-bottom: none;
+ 		}
+ 		.contare .contare-sb .box .box-1{
+ 			text-align: center;
+ 			line-height: 67px;
+ 			color: #807e7e;
+ 			font-size: 16px;
+ 		}
+ 		.footer{
+ 			width: 100%;
+ 			height: 297px;
+ 		}
+ 		.footer .footer-mas{
+ 			position: relative;
+ 			width: 1800px;
+ 			height: 297px;
+ 			margin:50px auto;
+ 			background-color:#fbfbfb;
+ 		}
+ 		.footer .footer-mas .footer-wis{
+ 			position: absolute;
+ 			top: 0;
+ 			left: 0;
+ 			width: 724px;
+ 			height: 297px;
+ 		}
+ 		.footer .footer-mas .footer-wis .footer-1{
+ 			position: absolute;
+ 			top: 60px;
+ 			left: 310px;
+ 			font-size: 24px;
+ 			color: #fff; 
+ 			background: url(img/bluef.png) no-repeat -10px 10px;
+ 		}
+ 		.footer .footer-mas .footer-writer{
+ 			position: absolute;
+ 			right: 0;
+ 			top: 0;
+ 			width: 1075px;
+ 			height: 297px;
+ 		}
+ 		.footer .footer-mas .footer-writer .footer-world{
+ 			position: absolute;
+ 			left: 174px;
+ 			top: 74px;
+ 			width: 540px;
+ 			height: 50px;
+ 		}
+ 		.footer .footer-mas  .footer-world .scay{
+ 			text-align: left;
+ 			font-size: 19px;
+ 			color: #373737;
+ 			font-weight: bolder;
+ 		}
+ 		.footer .footer-mas .footer-world .scay1{
+ 			position: absolute;
+ 			bottom: 0;
+ 			left: 0;
+ 			font-size: 12px;
+ 			color: #494949;
+ 		}
+ 		.footer .footer-mas .footer-world .scay2{
+ 			position: absolute;
+ 			left: 75px;
+ 			top: 2px;
+ 			width: 2px;
+ 			height: 47px;
+ 			background-color: #a5a5a9;
+ 		}
+ 		.footer .footer-mas .footer-world .scay3{
+ 			position: absolute;
+ 			left: 80px;
+ 			bottom: 5px;
+ 			font-size: 14px;
+ 			color: #494949;
+ 		}
+ 		.footer .footer-mas .footer-hittle .footer-hotle{
+ 			position: absolute;
+ 			bottom: 80px;
+ 			right: 360px;
+ 			width: 540px;
+ 			height: 50px;
+ 		}
+ 		.footer .footer-mas  .footer-hittle .scay7{
+ 			text-align: left;
+ 			font-size: 19px;
+ 			color: #373737;
+ 			font-weight: bolder;
+ 		}
+ 		.footer .footer-mas .footer-hittle .scay4{
+ 			position: absolute;
+ 			bottom: 0;
+ 			left: 0;
+ 			font-size: 12px;
+ 			color: #494949;
+ 		}
+ 		.footer .footer-mas .footer-hittle .scay5{
+ 			position: absolute;
+ 			left: 75px;
+ 			top: 2px;
+ 			width: 2px;
+ 			height: 47px;
+ 			background-color: #a5a5a9;
+ 		}
+ 		.footer .footer-mas .footer-hittle .scay6{
+ 			position: absolute;
+ 			left: 80px;
+ 			bottom: 5px;
+ 			font-size: 14px;
+ 			color: #494949; 
+ 		}
+ 		.last{
+ 			width: 100%;
+ 			height: 735px;
+ 			margin-top: 101px;
+ 		}
+ 		.last .last-routr{
+ 			position: relative;
+ 			width: 1200px;
+ 			height: 735px;
+ 			margin: 0  auto;
+ 		}
+ 		.last .last-routr .last-cast{
+ 			text-align: left;
+ 		}
+ 		.last .last-routr .last-cast .cast1{
+            font-size: 24px;
+            color: #3b3b3b;
+            font-weight: bolder;
+            background: url(img/bluef.png) no-repeat -10px 10px;
+ 		}
+ 		.last .last-routr .last-cast .cast2{
+ 			font-size: 14px;
+ 			color: #656565;
+ 		}
+ 		.last .last-routr .last-bz{
+ 			width: 1200px;
+ 			height: 498px;
+ 			margin-top: 104px;
+ 		}
+ 		.last .last-routr .last-bz .last-zc{
+ 			float: left;
+ 			position: relative;
+ 			width: 400px;
+ 			height: 249px;
+ 			background-color: #fbfbfb;
+ 		}
+ 		.last .last-routr .last-zc .last-zc-1 .one-days{
+ 			position: absolute;
+ 			top: 100px;
+ 			left: 110px;
+ 			font-size: 18px;
+ 			color: #5d5d5d;			
+ 		}
+ 		.last .last-routr .last-zc .last-zc-1 .one-days1{
+ 			position: absolute;
+ 			top: 130px;
+ 			left: 120px;
+ 			font-size: 16px;
+ 			color: #999999;
+ 		}
+ 		.last .last-routr .last-bz .last-sj{
+ 			float: left;
+ 			width: 400px;
+ 			height: 249px;
+ 			background: url(img/dahai.png) no-repeat center;
+ 		}
+ 		.last .last-routr .last-bz .last-dh{
+ 			position: relative;
+ 			float: left;
+ 			width: 400px;
+ 			height: 249px;
+ 			background-color: #fbfbfb;
+ 		}
+ 		.last .last-routr .last-dh .last-dh-1 .one-days2{
+ 			position: absolute;
+ 			top: 100px;
+ 			left: 130px;
+ 			font-size: 18px;
+ 			color: #5d5d5d;			
+ 		}
+ 		.last .last-routr .last-dh .last-dh-1 .one-days3{
+ 			position: absolute;
+ 			top: 130px;
+ 			left: 150px;
+ 			font-size: 16px;
+ 			color: #999999;
+ 		}
+ 		.last .last-routr .last-bz .last-ej{
+ 			float: left;
+ 			width: 400px;
+ 			height: 249px;
+ 			background: url(img/xianhua.png) no-repeat center;
+ 		}
+ 		.last .last-routr .last-bz .last-ej .naocanui{
+ 			width: 352px;
+ 			height: 212px;
+ 			margin:21px;
+ 			border: 2px solid  #04e4f8
+ 		}
+
+ 		.last .last-routr .last-bz .last-dn{
+ 			position: relative;
+ 			float: left;
+ 			width: 400px;
+ 			height: 249px;
+ 			background-color: #fbfbfb;
+ 		}
+ 		.last .last-routr .last-dn .last-dn-1 .one-days4{
+ 			position: absolute;
+ 			bottom:120px;
+ 			left: 140px;
+ 			font-size: 18px;
+ 			color: #5d5d5d;			
+ 		}
+ 		.last .last-routr .last-dn .last-dn-1 .one-days5{
+ 			position: absolute;
+ 			bottom:100px;
+ 			left: 112px;
+ 			font-size: 16px;
+ 			color: #999999;
+ 		}
+ 		.last .last-routr .last-bz .last-shamo{
+ 			float: left;
+ 			width: 400px;
+ 			height: 249px;
+ 			background: url(img/shamo.png) no-repeat center;
+ 		}
+ 		.last .last-routr .last-more{
+ 			position: absolute;
+ 			left: 405px;
+ 			bottom: 0;
+ 			width: 390px;
+ 			height: 66px;
+ 			border: 2px solid #f2f2f2;
+ 			border-bottom: none;
+ 			text-align: center;
+ 			line-height: 66px;
+ 			font-size: 16px;
+ 			color: #807e7e;
+ 		}
+ 		.finaly{
+ 			width: 100%;
+ 			height: 338px;
+ 			margin-top: 101px;
+ 		}
+ 		.finaly .finaly-tree{
+ 			position: relative;
+ 			width: 1800px;
+ 			height: 338px;
+ 			background: url(img/fengche.png);
+ 			margin: 0 auto;
+ 		}
+ 		.finaly .finaly-tree .finaly-team .team-one{
+ 			position: absolute;
+ 			top: 0;
+ 			left: 299px;
+ 			width: 581px;
+ 			height: 338px;
+ 		}
+ 		.finaly .finaly-tree .team-one .seaar{
+ 			position: absolute;
+ 			top: 103px;
+ 			left: 221px;
+ 			width: 149px;
+ 			height: 45px;
+ 			background-color: #04e4f8
+ 		}
+ 		.finaly .finaly-tree  .seaar .sea-1{
+ 			font-size: 20px;
+ 			color: #000;
+ 			text-align: center;
+ 			line-height: 45px;
+ 		}
+ 		.finaly .finaly-tree  .seaar .sea-1:hover a{
+ 			color: #f1f2f3;
+ 		}
+ 		.finaly .finaly-tree .team-wee .wee-1{
+ 			text-align: center;
+ 			line-height: 350px;
+            font-size: 22px;
+            color: #bdbaba;
+ 		}
+ 		.finaly .finaly-tree .team-wee .wee-2{
+ 			position: absolute;
+ 			bottom: 130px;
+ 			left: 210px;
+ 			font-size: 12px;
+ 			color: #bdbabd;
+ 		}
+
+ 		.finaly .finaly-tree .finaly-team .eve-one{
+ 			position: absolute;
+ 			top: 0;
+ 			right: 299px;
+ 			width: 581px;
+ 			height: 338px;
+ 		}
+ 		.finaly .finaly-tree .eve-one .evear{
+ 			position: absolute;
+ 			top: 103px;
+ 			right: 221px;
+ 			width: 149px;
+ 			height: 45px;
+ 		}
+ 		.finaly .finaly-tree  .evear .eve-1{
+ 			font-size: 20px;
+ 			color: #000;
+ 			text-align: center;
+ 			line-height: 45px;
+ 			color: black;
+ 			border: 2px solid #a5a5a9;
+ 		}
+ 		.finaly .finaly-tree  .evear .eve-1:hover a{
+ 			color: #f1f2f3;
+ 		}
+ 			.finaly .finaly-tree .eve-wee .eve-1{
+ 			text-align: center;
+ 			line-height: 350px;
+            font-size: 22px;
+            color: #bdbaba;
+ 		}
+ 		.finaly .finaly-tree .eve-wee .eve-2{
+ 			position: absolute;
+ 			bottom: 130px;
+ 			right: 210px;
+ 			font-size: 12px;
+ 			color: #bdbabd;
+ 		}
+ 		.hot{
+ 			width: 100%;
+ 			height: 481px;
+ 			margin-top: 101px;
+ 		}
+ 		.hot .hot-cold{
+ 			position: relative;
+ 			width: 1800px;
+ 			height: 481px;
+ 			margin: 0 auto ;
+ 		}	
+ 		.hot .hot-cold .cold-1{
+ 			font-size: 23.72px;
+ 			color: #3b3b3b;
+ 			font-weight: bolder;
+ 			background: url(img/bluef.png) no-repeat -10px 10px;
+ 		}
+ 		.hot .hot-cold .cold-2{
+ 			color: #6f6f6f;
+ 			font-size: 14px;
+ 		}
+ 		.hot .hot-cold .cold-3{
+ 			position: absolute;
+ 			left: 0;
+ 			top: 121px;
+ 			font-size: 18px;
+ 			color: #a5a5a9;'
+ 		}
+ 		.hot .hot-cold .cold-4{
+ 			position: absolute;
+ 			left: 0;
+ 			top: 200px;
+ 			font-size: 14px;
+ 			color: #9fa2a2;
+ 		}
+ 		.hot .hot-cold .cold-5{
+ 			position: absolute;
+ 			left: 0;
+ 			top: 230px;
+ 			font-size: 14px;
+ 			color: #9fa2a2;
+ 		}
+ 		.hot .hot-cold .cold-6{
+ 			position: absolute;
+ 			left: 0;
+ 			top: 260px;
+ 			font-size: 14px;
+ 			color: #9fa2a2;
+ 		}
+ 		.hot .hot-cold .cold-7{
+ 			position: absolute;
+ 			left: 0;
+ 			top: 290px;
+ 			font-size: 14px;
+ 			color: #9fa2a2;
+ 		}
+ 		.hot .hot-cold .hot-1{
+            position: absolute;
+            left: 0;
+            bottom: 130px;
+ 		}
+ 		.hot .hot-cold .hot-2{
+            position: absolute;
+            left: 50px;
+            bottom: 130px;
+ 		}
+ 		.hot .hot-cold .hot-3{
+            position: absolute;
+            left: 100px;
+            bottom: 130px;
+ 		}
+ 		.hot .hot-cold .cold-8{
+ 			position: absolute;
+ 			left: 0;
+ 			bottom: 90px;
+ 			font-size: 14px;
+ 			color: #9fa2a2;
+ 		}
+ 		.hot .zuihou{
+ 			position: absolute;
+ 			right: 0;
+ 			bottom: 100px;
+ 			width: 501px;
+ 			height: 248px;
+ 		}
+ 		.hot .zuihou .zname{
+ 			float: left;
+ 			position: relative;
+ 			width: 133px;
+ 			height: 87px;
+ 			border-bottom: 2px solid #bfbdbd;
+ 			font-size: 14px;
+ 			color: #bfbdbd;
+ 		}
+ 		.hot .zuihou .zname p{
+ 			position: absolute;
+ 			left: 10px;
+ 			top: 20px;
+ 		}
+ 		.hot .zuihou .zyx{
+ 			float: left;
+ 			position: absolute;
+            left: 170px;
+ 			width: 133px;
+ 			height: 87px;
+ 			border-bottom: 2px solid #bfbdbd;
+ 			font-size: 14px;
+ 			color: #bfbdbd;
+ 		}
+ 		.hot .zuihou .zyx p{
+ 			position:absolute;
+ 			left: 0px;
+ 			top: 20px;
+ 		}
+ 		.hot .zuihou .dianhua{
+ 			float: left;
+ 			position: absolute;
+            right: 0px;
+ 			width: 133px;
+ 			height: 87px;
+ 			border-bottom: 2px solid #bfbdbd;
+ 			font-size: 14px;
+ 			color: #bfbdbd;
+ 		}
+ 		.hot .zuihou .dianhua p{
+ 			position:absolute;
+ 			left: 0px;
+ 			top: 20px;
+ 		}
+ 		.hot .zuihou .neirong{
+ 			position: absolute;
+ 			bottom: 50px;
+ 			width: 498px;
+ 			height: 55px;
+ 			border-bottom: 2px solid #bfbdbd;
+ 		}
+ 		.hot .zuihou .neirong p{
+ 			font-size: 14px;
+ 			color: #bfbdbd;
+ 		}
+ 		.hot .zuihou .tijiao{
+ 			position: absolute;
+ 			bottom: 5px;
+            left: 0px;
+ 			background-color: #474646;
+ 			color: #e0e0e0;
+ 			border: 6px solid #474646;
+ 			border-left: 8px solid #474646;
+ 			border-right: 8px solid #474646;
+
+ 		}
+
+
+ 	
+ 		
+
+ 		
+ 		
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="top-apple">
+			<ul class="top-masage">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">特别策划</a></li>
+				<li><a href="#">精品路线</a></li>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="header">
+		<div class="header-our">
+		  <p class="header-pair">让美好触手可及</p>
+		  <div class="header-1"></div>
+		  <div class="header-2"></div>
+		  <ul class="seed">
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+		</ul>
+		</div>
+	</div>
+	<div class="contare">
+		<div class="contare-sb">
+			<p class="contare-bc">特别策划</p>
+			<p class="contare-cnm">ACTIVITY ROUTR</p>
+			<div class="logo">
+			   <div class="logo-sb"></div>
+		    </div>
+		    <div class="days">
+		    	<p class="days-1">苍山洱海旁，过一段慢时光</p>
+		    	<p class="days-2">云南风花雪月之旅 （6days）</p>
+		    	<p class="days-3">
+		    	<span><img src="img/fang1.png"> 洱海骑行</span>
+		    	<span><img src="img/fang2.png">手作扎染 </span>
+		    	<span><img src="img/fang3.png">泸沽湖划船 </span>
+		    	<span><img src="img/fang4.png"> 草海 </span>
+		    	<span><img src="img/fang6.png">束河古镇</span>	            
+		        <span><img src="img/fang.png"> 拉市海</span>
+		    	</p>
+		    </div>
+		    <div class="logo-wc">
+		    	<div class="logo-nm"></div>
+		    </div>
+		    <div class="city">
+		    	<p class="city-1">苍近距离看“滚滚”花式卖萌</p>
+		    	<p class="city-2">成都City  Walk之旅 （6days）</p>
+		    	<p class="city-3">
+		    	<span><img src="img/fang1.png">熊猫基地</span>
+		    	<span><img src="img/fang2.png">宽窄巷子</span>
+		    	<span><img src="img/fang3.png">武侯祠</span>
+		    	<span><img src="img/fang4.png">小酒馆</span>
+		    	<span><img src="img/fang6.png">吃货天堂</span>	            
+		        <span><img src="img/fang.png">锦里</span>
+		    	</p>
+		    </div>
+		     <div class="logo-nmb">
+		    	<div class="logo-mdorange"></div>
+		    </div>
+		    <div class="orange" ">
+		    	<p class="orange-1">骑行青海湖，行摄纯净天空之境</p>
+		    	<p class="orange-2">梦回大西北之旅 （6days）</p>
+		    	<p class="orange-3">
+		    	<span><img src="img/fang1.png">茶卡盐湖</span>
+		    	<span><img src="img/fang2.png">U型天路</span>
+		    	<span><img src="img/fang3.png">青海湖日出</span>
+		    	<span><img src="img/fang4.png">魔鬼城</span>
+		    	<span><img src="img/fang6.png">七彩丹霞</span>	            
+		        <span><img src="img/fang.png">莫高窟</span>
+		    	</p>
+		    </div>
+		    <div class="box">
+		    	<p class="box-1"><a href="#">MORE</a></p>
+		    </div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-mas">
+			<div class="footer-wis">
+				<img src="img/724-297.png">
+				<p class="footer-1">关于我们</p>
+			</div>
+            <div class="footer-writer">
+            	<div class="footer-world">
+            		<p class="scay">介绍</p>
+            		<p class="scay1">Introduce</p>
+            		<div class="scay2"></div>
+            		<span class="scay3">新旅行概念社区在这里你可以收货来自世界各地的友谊为您
+                    提供省心、省钱、纯玩、有趣的路线随时带您出发看世界。
+                    </span>
+            	</div>
+            </div>
+            <div class="footer-hittle">
+            	<div class="footer-hotle">
+            		<p class="scay7">理念</p>
+            		<p class="scay4">Concept</p>
+            		<div class="scay5"></div>
+            		<span class="scay6">每一寸土地都承载着一个城市厚重而亲切的灵魂。
+                    About travel, about life, That's all.
+                    </span>
+            	</div>
+            </div>
+		</div>
+	</div>
+	<div class="last">
+		<div class="last-routr">
+			<ul class="last-cast">
+				<li class="cast1">精品路线</li>
+				<li class="cast2">CLASSICS ROUTR</li>
+			</ul>
+			<div class="last-bz">
+				<div class="last-zc">
+					<ul class="last-zc-1">
+						<li class="one-days">京都岚山深度一日游</li>
+						<li class="one-days1">寻找我们的风花雪月</li>
+					</ul>
+				</div>
+				<div class="last-sj"></div>
+				<div class="last-dh">
+					<ul class="last-dh-1">
+						<li class="one-days2">西北精环线自驾游</li>
+						<li class="one-days3">圆一场北方的梦</li>
+					</ul>
+				</div>
+				<div class="last-ej">
+					<div class="naocanui"></div>
+				</div>
+				<div class="last-dn">
+					<ul class="last-dn-1">
+						<li class="one-days4">东极岛三日游</li>
+						<li class="one-days5">后青春时代的海岛记忆</li>
+					</ul>
+				</div>
+				<div class="last-shamo"></div>
+			</div>
+			<div class="last-more">
+				<p><a href="#">MORE</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="finaly">
+		<div class="finaly-tree">
+			<div class="finaly-team">
+				<div class="team-one">
+						<div class="seaar">
+							<p class="sea-1"><a href="#" >定制团体游</a></p>
+						</div>
+						<ul class="team-wee">
+							<li class="wee-1">独立成团 专属定制</li>
+							<li class="wee-2">简单几步，定制您的私人旅行</li>
+						</ul>
+				</div>
+				<div class="eve-one">
+						<div class="evear">
+							<p class="eve-1"><a href="#" >领队自由行</a></p>
+						</div>
+						<ul class="eve-wee">
+							<li class="eve-1">金牌领队 专业跟拍</li>
+							<li class="eve-2">解锁陌生,升级地道旅行体验</li>
+						</ul>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+	<div class="hot">
+		<div class="hot-cold">
+			<p class="cold-1">联系我们</p>
+			<p class="cold-2">CONTACT</p>
+			<p class="cold-3">慢旅Slow Travle工作室 </p>
+			<p class="cold-4">地点：中国河南省郑州市绿地新都汇</p>
+			<p class="cold-5">邮编：1000000</p>
+			<p class="cold-6">电话：0392-23656504</p>
+			<p class="cold-7">邮箱：manlv@qq.com</p>
+			<img src="img/qqqq.png" class="hot-1">
+			<img src="img/wwww.png" class="hot-2">
+			<img src="img/xxxx.png" class="hot-3">
+			<p class="cold-8">COPYRIGHT (©) 2018 mo004_2551 - 生活方式旅游类网站.</p>
+			<div class="zuihou">
+			    <div class="zname">
+			    	<p>姓名</p>
+			    </div>
+			    <div class="zyx">
+			    	<p>邮箱</p>
+			    </div>
+			    <div class="dianhua">
+			    	<p>电话</p>
+			    </div>
+			    <div class="neirong">
+			    	<p>内容</p>
+			    </div>
+			    <input type="submit" name="提交" class="tijiao">
+		    </div>
+		</div>		
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Template • TodoMVC</title>
+	<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+	<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+	<!-- CSS overrides - remove if you don't need it -->
+	<link rel="stylesheet" href="css/app.css">
+	<script src="node_modules/vue/dist/vue.min.js"></script>
+</head>
+
+<body>
+	<div id="app">
+		<section class="todoapp">
+			<header class="header">
+				<h1>{{title}}</h1>
+				<!-- 添加新的值 -->
+				<input @keyup.enter="goSave" v-model="newTodo" class="new-todo" placeholder="What needs to be done?" autofocus>
+			</header>
+			<!-- This section should be hidden by default and shown when there are todos -->
+			<section class="main">
+				<!-- 全选样式 -->
+				<input @click="handEl" v-model="todoAll" id="toggle-all" class="toggle-all" type="checkbox">
+				<label for="toggle-all">Mark all as complete</label>
+				<ul class="todo-list">
+					<!-- These are here just to show the structure of the list items -->
+					<!-- List items should get the class `editing` when editing and `completed` when marked as completed -->
+					<li v-for="todo in todosCom" key="todo.id" :class="{completed:todo.completed,editing:todo.id==editOne}">
+						<div class="view">
+							<input v-model="todo.completed" class="toggle" type="checkbox">
+							<label @dblclick="goNext(todo.id,$event)">{{todo.text}}</label>
+							<button @click="delNext(todo.id)" class="destroy"></button>
+						</div>
+						<input @keyup.enter="doSave" class="edit" v-model="todo.text">
+					</li>
+
+				</ul>
+			</section>
+			<!-- This footer should hidden by default and shown when there are todos -->
+			<footer class="footer">
+				<!-- This should be `0 items left` by default -->
+				<span class="todo-count"><strong>{{itemLeft}}</strong> item left</span>
+				<!-- Remove this if you don't implement routing -->
+				<ul class="filters">
+					<li>
+						<!-- 动态绑定,点击那个事件就给那个事件添加class,当点击其他的时候取消class,并给点击的class添加样式 -->
+						<a :class="{selected:type=='All'}" @click="type='All'"  href="#/">All</a>
+					</li>
+					<li>
+						<a :class="{selected:type=='Active'}" @click="type='Active'"  href="#/active">Active</a>
+					</li>
+					<li>
+						<a :class="{selected:type=='Completed'}" @click="type='Completed'" href="#/completed">Completed</a>
+					</li>
+				</ul>
+				<!-- Hidden if no completed items are left ↓ -->
+				<button @click="cleanTo" class="clear-completed">Clear completed</button>
+			</footer>
+		</section>
+	</div>
+	<!-- Scripts here. Don't remove ↓ -->
+	<script src="node_modules/todomvc-common/base.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		// 全局常量
+		var KEY = 'vue-todos';
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				title: 'TODOSss',
+				todos: [
+					// {
+					// 	id: guid(),
+					// 	text: '洗脸',
+					// 	completed: false,
+					// },
+					// {
+					// 	id: guid(),
+					// 	text: '刷牙',
+					// 	// 显示被确认的样式
+					// 	completed: false,
+					// }
+				],
+				newTodo: '', //新加入的数组
+				editOne: '',  //判断开启编辑
+				todoAll:false , // 判断全部
+				type:'All' //规定记住样式
+			 },
+			 created () {
+				 this.initData();
+			 },
+			methods: {
+				// 回车添加新的数组
+				goSave() {
+					// 判断如果 this.newTodo 什么都没有输入,直接返回不进入数组
+					if (!this.newTodo) return;
+
+					this.todos.push({
+						id: guid(),
+						text: this.newTodo,
+						completed: false,
+					})
+					this.newTodo = '';
+				},
+				// 编辑样式
+				goNext(id, e) {
+					this.editOne = id;
+					this.completed = id;
+					var inputEl = e.target.parentNode.nextElementSibling;
+					console.log(e);
+					this.$nextTick(() => {
+						//放到这里的代码 会等待vue的响应式结束之后触发.
+						// 数据模型变化了,同步到视图层也变化,视图变化之后才触发
+						inputEl.focus();
+					})
+				},
+				// 回车修改编辑内容
+				doSave() {
+					this.editOne = ''
+				},
+				// 删除内容 两种方式 ,
+				// 一种是for循环判断下标,这个下标的ID等于ID就删除这个下标的内容,  返回原数组
+				// 第二种是遍历这个数组,判断ID是否等于,如果等于,就删除这个ID,返回原数组
+				delNext(id) {
+					// var index = -1;
+					// for(var i = 0 ;i <this.todos.length; i++){
+					// 	if(this.todos[i].id==id){
+					// 		index = i;
+					// 	}
+					// }
+					// this.todos.splice(index,1)
+					this.todos.map((item, i) => {
+						if (item.id == id) {
+							this.todos.splice(i, 1);
+							return item;
+						}
+					})
+				},
+				//  清除已经完成的 过滤, completed去非,要是为false的全部清除掉,重新返回数组
+				cleanTo() {
+					this.todos = this.todos.filter(item => !item.completed);
+				},
+				// 判断是否全选中
+				handEl(){
+             this.todos.map(index=>{
+								 index.completed = !this.todoAll;
+								 return index;
+						 })
+				},
+				// 保存全局变量,
+				doSave(){
+					window.localStorage.setItem(KEY,JSON.stringify(this.todos));
+				},
+				// 保存全局定义的量,下次打开时恢复关闭时的样子
+				initData(){
+					var todos = window.localStorage.getItem(KEY);
+					  this.todos = todos?JSON.parse(todos):[];
+				}
+			},
+			// 计算属性
+			computed: {
+				// 过滤,判断完成的事件,有为false的就返回新的长度
+				itemLeft() {
+					return this.todos.filter(item => !item.completed).length
+				}, 
+				// 判断type的值,点击任意一个返回当前的结果
+				todosCom(){
+					 switch (this.type) {
+						//  点击的是All的话,返回原本的数组
+						 case 'All':
+							 return this.todos;
+							 break;
+							//  点击的是Active,返回为false的对象
+						 case 'Active':
+							 return this.todos.filter(item=>!item.completed);
+							 break;
+							 	//  点击的是Active,返回为true的对象
+						 case 'Completed':
+							  return this.todos.filter(item => item.completed);
+							 break;	 
+							//  返回原本的数组	  
+						 default:
+						 		return this.todos;
+							 break;
+					 }
+				}
+
+
+			},
+			watch:{
+				// 监听判断:如果nv的值等于0,则全变为选择状态,如果不为零就是false状态
+			  itemLeft(nv,ov){
+				  if(nv==0){
+						this.todoAll = true;
+					}else{
+						 this.todoAll = false;
+					}
+				},
+				todos:{
+					handler(nv,ov){
+						this.doSave();
+					},
+					deep:true
+				}
+			}
+		})
+
+		// 模拟uuid的生成
+		function guid() {
+			return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+		}
+		function S4() {
+			return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+		}
+	</script>
+</body>
+
+</html>
