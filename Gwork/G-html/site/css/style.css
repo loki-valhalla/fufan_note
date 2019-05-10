@@ -1,0 +1,620 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  z-index: 999; }
+  .header .Navigation {
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    background-color: #fff;
+    margin: 0 auto; }
+    .header .Navigation .list {
+      display: none; }
+    .header .Navigation .Label {
+      position: absolute;
+      top: 0;
+      right: 50px;
+      margin-top: 30px;
+      margin-left: 0; }
+      .header .Navigation .Label .item {
+        display: block;
+        width: 40px;
+        height: 25px;
+        float: left;
+        margin-left: 80px; }
+      .header .Navigation .Label .vul {
+        font-size: 16px;
+        color: #767676; }
+      .header .Navigation .Label :hover {
+        color: #668aca;
+        font-size: 18px;
+        border-bottom: 1px solid #668aca; }
+    .header .Navigation .mobile {
+      display: none; }
+
+.logo {
+  width: 100%;
+  height: 700px; }
+  .logo img {
+    width: 100%;
+    height: 100%; }
+
+.banner {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px; }
+  .banner .center {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto; }
+    .banner .center .show {
+      position: relative;
+      width: 100%;
+      height: 574px;
+      background-color: #fff; }
+      .banner .center .show .msg {
+        display: block;
+        width: 120px;
+        height: 35px;
+        font-size: 30px;
+        color: #767676;
+        line-height: 150px; }
+      .banner .center .show .text {
+        font-size: 12px;
+        color: #767676;
+        line-height: 150px; }
+      .banner .center .show .mouse {
+        position: absolute;
+        left: 0;
+        top: 120px;
+        display: block;
+        width: 40px;
+        height: 1px;
+        background-color: #767676; }
+      .banner .center .show .trick {
+        position: absolute;
+        right: 0;
+        top: 105px;
+        display: block;
+        width: 300px;
+        height: 1px;
+        background-color: #767676; }
+      .banner .center .show .banner-adress {
+        position: absolute;
+        top: 178px;
+        right: 460px;
+        height: 25px;
+        width: 1200px;
+        margin-right: -223px; }
+        .banner .center .show .banner-adress .ban-box {
+          position: absolute;
+          left: 550px;
+          top: -30px; }
+          .banner .center .show .banner-adress .ban-box .banner-list {
+            left: 300px;
+            float: left;
+            display: block;
+            width: 100px;
+            height: 100%;
+            text-align: center; }
+            .banner .center .show .banner-adress .ban-box .banner-list:nth-child(2) {
+              border-left: 1px solid #767676;
+              border-right: 1px solid #767676; }
+            .banner .center .show .banner-adress .ban-box .banner-list:nth-child(3) {
+              border-left: 1px solid #767676;
+              border-right: 1px solid #767676; }
+            .banner .center .show .banner-adress .ban-box .banner-list:nth-child(4) {
+              border-left: 1px solid #767676; }
+            .banner .center .show .banner-adress .ban-box .banner-list .ban-liw {
+              color: #767676;
+              font-size: 14px; }
+              .banner .center .show .banner-adress .ban-box .banner-list .ban-liw:hover {
+                color: #668aca;
+                font-size: 18px;
+                border-bottom: 1px solid #668aca; }
+        .banner .center .show .banner-adress .ban-de .ban-ul {
+          display: none;
+          position: absolute;
+          left: 200px;
+          width: 100%;
+          height: 450px;
+          overflow: hidden; }
+          .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo {
+            width: 100%;
+            height: 300px;
+            margin-top: 50px; }
+            .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list {
+              position: relative;
+              display: block;
+              width: 360px;
+              height: 300px;
+              float: left;
+              margin-top: 50px;
+              margin-left: 40px; }
+              .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list .demo-photo {
+                width: 350px;
+                height: 180px;
+                border-radius: 10px;
+                background-size: cover;
+                overflow: hidden; }
+                .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list .demo-photo > img {
+                  width: 100%;
+                  height: 100%; }
+              .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list .demo-msg {
+                margin-top: 20px;
+                width: 360px;
+                height: 40px;
+                background-color: #fff;
+                z-index: 99; }
+                .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list .demo-msg .demo-temp {
+                  position: absolute;
+                  left: 20px;
+                  font-size: 14px;
+                  color: #767676; }
+                .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list .demo-msg .demo-temp1 {
+                  position: absolute;
+                  left: 20px;
+                  font-size: 12px;
+                  color: #767676; }
+              .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list .demo-temp2 {
+                position: absolute;
+                right: 20px;
+                bottom: 120px;
+                display: block;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                border: 1px solid #e6e6e6;
+                background-color: #fff;
+                transform: rotate(270deg);
+                margin-left: 20px;
+                z-index: 99; }
+                .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list .demo-temp2 .demo-temp3 {
+                  text-align: center;
+                  margin-top: 8px;
+                  color: #767676; }
+              .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list .demo-active {
+                position: absolute;
+                left: -11px;
+                top: 0;
+                display: none;
+                height: 250px;
+                width: 360px; }
+                .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list .demo-active > img {
+                  height: 100%;
+                  width: 100%; }
+              .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list:hover .demo-active {
+                display: block;
+                border-radius: 15px;
+                background: rgba(0, 0, 0, 0.4); }
+              .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list:hover .demo-msg {
+                position: absolute;
+                top: 50px;
+                background: rgba(0, 0, 0, 0); }
+                .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list:hover .demo-msg > span {
+                  color: #000; }
+              .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list:hover .demo-temp2 {
+                position: absolute;
+                top: 170px;
+                right: 40px; }
+    .banner .center .commodity {
+      position: relative;
+      width: 100%;
+      height: 1250px; }
+      .banner .center .commodity .msg {
+        display: block;
+        width: 120px;
+        height: 35px;
+        font-size: 30px;
+        color: #767676;
+        line-height: 240px; }
+      .banner .center .commodity .text {
+        font-size: 12px;
+        color: #767676;
+        line-height: 220px; }
+      .banner .center .commodity .mouse {
+        position: absolute;
+        left: 0;
+        top: 160px;
+        display: block;
+        width: 40px;
+        height: 1px;
+        background-color: #767676; }
+      .banner .center .commodity .trick {
+        position: absolute;
+        right: 0;
+        top: 155px;
+        display: block;
+        width: 300px;
+        height: 1px;
+        background-color: #767676; }
+      .banner .center .commodity .household {
+        width: 100%;
+        height: 110px;
+        margin-top: -50px; }
+        .banner .center .commodity .household .picture {
+          position: relative;
+          width: 170px;
+          height: 110px;
+          float: left;
+          margin-left: 60px; }
+          .banner .center .commodity .household .picture .index {
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            width: 130px;
+            height: 84px; }
+          .banner .center .commodity .household .picture > p {
+            font-size: 14px;
+            color: #767676;
+            text-align: center;
+            line-height: 200px; }
+          .banner .center .commodity .household .picture > span {
+            position: absolute;
+            top: 108px;
+            left: 70px;
+            display: none;
+            width: 20px;
+            height: 1px;
+            background-color: #767676; }
+          .banner .center .commodity .household .picture:hover .index {
+            background-color: #94adda;
+            border-radius: 10px; }
+          .banner .center .commodity .household .picture:hover p {
+            color: #94adda; }
+          .banner .center .commodity .household .picture:hover span {
+            display: block;
+            background-color: #94adda; }
+      .banner .center .commodity .b-total {
+        width: 100%;
+        height: 100%; }
+        .banner .center .commodity .b-total .total-line {
+          width: 100%;
+          height: 100%;
+          float: left;
+          display: none; }
+          .banner .center .commodity .b-total .total-line .total {
+            display: block;
+            width: 100%;
+            height: 1086px; }
+            .banner .center .commodity .b-total .total-line .total .total-list {
+              position: relative;
+              float: left;
+              display: block;
+              width: 350px;
+              height: 370px;
+              margin-left: 30px;
+              margin-top: 50px; }
+              .banner .center .commodity .b-total .total-line .total .total-list > img {
+                margin-top: 40px;
+                width: 100%;
+                height: 320px; }
+              .banner .center .commodity .b-total .total-line .total .total-list .total-msg span {
+                text-align: left;
+                margin-left: 50px; }
+              .banner .center .commodity .b-total .total-line .total .total-list .active {
+                position: absolute;
+                top: 50px;
+                left: 0px;
+                display: none;
+                width: 350px;
+                height: 320px;
+                border-radius: 10px;
+                background: rgba(0, 0, 0, 0.5); }
+                .banner .center .commodity .b-total .total-line .total .total-list .active .active-trick {
+                  position: absolute;
+                  top: 120px;
+                  display: block;
+                  width: 80px;
+                  height: 2px;
+                  background-color: #f8f8f8; }
+                .banner .center .commodity .b-total .total-line .total .total-list .active .active-msg {
+                  position: absolute;
+                  top: 95px;
+                  left: 100px;
+                  font-size: 35px;
+                  color: #f8f8f8; }
+              .banner .center .commodity .b-total .total-line .total .total-list:hover .active {
+                display: block; }
+              .banner .center .commodity .b-total .total-line .total .total-list:hover .total-msg {
+                position: absolute;
+                top: 200px;
+                line-height: 30px;
+                color: black; }
+    .banner .center .area {
+      position: relative;
+      width: 100%;
+      height: 900px; }
+      .banner .center .area .msg {
+        position: absolute;
+        top: 50px;
+        display: block;
+        width: 120px;
+        height: 35px;
+        font-size: 30px;
+        color: #767676; }
+      .banner .center .area .text {
+        position: absolute;
+        left: 0;
+        top: 85px;
+        font-size: 12px;
+        color: #767676; }
+      .banner .center .area .mouse {
+        position: absolute;
+        left: 0;
+        top: 100px;
+        display: block;
+        width: 40px;
+        height: 1px;
+        background-color: #767676; }
+      .banner .center .area .trick {
+        position: absolute;
+        right: 0;
+        top: 95px;
+        display: block;
+        width: 300px;
+        height: 1px;
+        background-color: #767676; }
+      .banner .center .area .serve {
+        position: absolute;
+        top: 200px;
+        left: -355px;
+        width: 1900px;
+        height: 700px;
+        background: url(../img/FWlogo.png) no-repeat center;
+        background-size: cover; }
+        .banner .center .area .serve .s-text {
+          position: absolute;
+          left: 355px;
+          top: 125px;
+          font-size: 30px;
+          color: #fff; }
+        .banner .center .area .serve .s-eng {
+          position: absolute;
+          left: 355px;
+          top: 200px;
+          font-size: 14px;
+          color: #fff; }
+        .banner .center .area .serve .f-box {
+          position: absolute;
+          bottom: 125px;
+          left: 555px;
+          width: 1000px;
+          height: 150px; }
+          .banner .center .area .serve .f-box .value {
+            position: relative;
+            float: left;
+            width: 248px;
+            height: 148px;
+            border: 1px solid #767676; }
+            .banner .center .area .serve .f-box .value .demo {
+              font-size: 16px;
+              color: #fff;
+              text-align: center;
+              line-height: 80px; }
+            .banner .center .area .serve .f-box .value .demo1 {
+              position: absolute;
+              left: 50%;
+              top: 65px;
+              display: block;
+              width: 35px;
+              height: 1px;
+              background-color: #fff;
+              margin-left: -22px; }
+            .banner .center .area .serve .f-box .value .demo2 {
+              text-align: center;
+              font-size: 12px;
+              color: #fff; }
+            .banner .center .area .serve .f-box .value:hover {
+              background-color: #668aca; }
+    .banner .center .licker {
+      position: relative;
+      width: 100%;
+      height: 746px; }
+      .banner .center .licker .msg {
+        display: block;
+        width: 120px;
+        height: 35px;
+        font-size: 30px;
+        color: #767676;
+        line-height: 200px; }
+      .banner .center .licker .text {
+        font-size: 12px;
+        color: #767676;
+        line-height: 180px; }
+      .banner .center .licker .mouse {
+        position: absolute;
+        left: 0;
+        top: 135px;
+        display: block;
+        width: 40px;
+        height: 1px;
+        background-color: #767676; }
+      .banner .center .licker .trick {
+        position: absolute;
+        right: 0;
+        top: 130px;
+        display: block;
+        width: 300px;
+        height: 1px;
+        background-color: #767676; }
+      .banner .center .licker .viruses {
+        position: absolute;
+        top: 180px;
+        width: 570px;
+        height: 270px;
+        background: url(../img/ZF-1.png) no-repeat center; }
+        .banner .center .licker .viruses .vire-unm {
+          display: none;
+          width: 100%;
+          height: 90px;
+          background: rgba(0, 0, 0, 0.4);
+          margin-top: 180px; }
+          .banner .center .licker .viruses .vire-unm .vire-index {
+            width: 300px;
+            height: 100%;
+            margin-left: 45px; }
+            .banner .center .licker .viruses .vire-unm .vire-index .vire-mis {
+              font-size: 18px;
+              color: #fff;
+              line-height: 40px; }
+            .banner .center .licker .viruses .vire-unm .vire-index .vire-mis1 {
+              font-size: 12px;
+              color: #fff;
+              line-height: 20px; }
+          .banner .center .licker .viruses .vire-unm .vire-rote {
+            position: absolute;
+            right: 50px;
+            bottom: 20px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #fff;
+            font-size: 30px;
+            text-align: center;
+            line-height: 25px; }
+        .banner .center .licker .viruses:hover .vire-unm {
+          display: block; }
+      .banner .center .licker .l-box {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 270px;
+        height: 270px; }
+      .banner .center .licker .l-box1 {
+        position: absolute;
+        bottom: 0;
+        left: 300px;
+        width: 270px;
+        height: 270px; }
+      .banner .center .licker .xx-box {
+        position: absolute;
+        right: 0;
+        top: 175px;
+        width: 570px;
+        height: 570px;
+        background: url(../img/ZF-4.png) no-repeat center; }
+    .banner .center .last {
+      position: relative;
+      width: 100%;
+      height: 760px; }
+      .banner .center .last .msg {
+        display: block;
+        width: 120px;
+        height: 35px;
+        font-size: 30px;
+        color: #767676;
+        line-height: 240px; }
+      .banner .center .last .text {
+        font-size: 12px;
+        color: #767676;
+        line-height: 240px; }
+      .banner .center .last .mouse {
+        position: absolute;
+        left: 0;
+        top: 165px;
+        display: block;
+        width: 40px;
+        height: 1px;
+        background-color: #767676; }
+      .banner .center .last .trick {
+        position: absolute;
+        right: 0;
+        top: 155px;
+        display: block;
+        width: 300px;
+        height: 1px;
+        background-color: #767676; }
+      .banner .center .last .last-logo {
+        width: 500px;
+        height: 300px;
+        background: url(../img/GY.png) no-repeat center; }
+      .banner .center .last .last-msg {
+        position: absolute;
+        right: 0;
+        bottom: 185px;
+        width: 700px;
+        height: 300px; }
+        .banner .center .last .last-msg p {
+          font-size: 14px;
+          color: #767676;
+          text-align: left;
+          line-height: 25px;
+          margin-top: 30px;
+          margin-left: 25px; }
+
+.end {
+  width: 100%;
+  height: 263px;
+  background-color: #f7f7f7; }
+  .end .end-msg {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto; }
+    .end .end-msg .end-ware {
+      position: absolute;
+      left: 0;
+      top: 100px;
+      width: 385px;
+      height: 85px;
+      background-color: #f7f7f7; }
+      .end .end-msg .end-ware p {
+        font-size: 16px;
+        color: #767676;
+        text-align: center;
+        line-height: 50px; }
+      .end .end-msg .end-ware .end-box {
+        position: absolute;
+        left: 110px;
+        width: 200px;
+        height: 25px; }
+        .end .end-msg .end-ware .end-box .end-item {
+          float: left;
+          display: block;
+          width: 25px;
+          height: 25px;
+          margin-left: 20px; }
+    .end .end-msg .end-adress {
+      position: absolute;
+      left: 385px;
+      top: 100px;
+      width: 433px;
+      height: 85px;
+      background-color: #f7f7f7;
+      border-left: 1px solid #767676; }
+      .end .end-msg .end-adress p {
+        font-size: 14px;
+        color: #767676;
+        line-height: 30px;
+        text-align: left;
+        margin-left: 100px; }
+    .end .end-msg .end-phone {
+      position: absolute;
+      top: 100px;
+      right: 0;
+      width: 382px;
+      height: 85px;
+      background-color: #f7f7f7;
+      border-left: 1px solid #767676; }
+      .end .end-msg .end-phone p {
+        font-size: 14px;
+        color: #767676;
+        line-height: 30px;
+        text-align: left;
+        margin-left: 60px; }
+
+/*# sourceMappingURL=style.css.map */

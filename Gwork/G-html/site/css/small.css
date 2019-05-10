@@ -1,0 +1,242 @@
+@media (max-width: 768px) {
+  .header {
+    height: 80px;
+    width: 100%; }
+    .header .Navigation {
+      position: relative;
+      height: 100%;
+      width: 100%; }
+      .header .Navigation img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 150px; }
+      .header .Navigation .list {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url(../img/heng.png) no-repeat center; }
+      .header .Navigation .Label {
+        display: none; }
+      .header .Navigation .mobile {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 50%;
+        height: 350px;
+        background-color: #fff;
+        overflow: hidden; }
+        .header .Navigation .mobile .item {
+          margin-top: 20px;
+          margin-left: -10px;
+          font-size: 16px;
+          color: #767676;
+          line-height: 50px;
+          text-align: center;
+          border: none;
+          float: none; }
+          .header .Navigation .mobile .item .vul {
+            color: #767676; }
+
+  .logo {
+    height: 400px;
+    width: 768px; }
+    .logo img {
+      height: 400px;
+      width: 768px; }
+
+  .banner {
+    width: 100%; }
+    .banner .center {
+      width: 100%; }
+      .banner .center .show {
+        position: relative;
+        width: 768px;
+        height: 850px; }
+        .banner .center .show .msg {
+          position: absolute;
+          left: 0;
+          top: 30px;
+          line-height: 0; }
+        .banner .center .show .text {
+          position: absolute;
+          left: 0;
+          top: 45px;
+          line-height: 20px; }
+        .banner .center .show .mouse {
+          position: absolute;
+          top: 65px;
+          left: 0; }
+        .banner .center .show .trick {
+          position: absolute;
+          right: 0;
+          top: 45px;
+          display: block;
+          width: 150px; }
+        .banner .center .show .banner-adress {
+          width: 768px;
+          height: 750px; }
+          .banner .center .show .banner-adress .ban-box {
+            width: 500px;
+            height: 35px;
+            margin-left: -130px; }
+          .banner .center .show .banner-adress .ban-de {
+            width: 768px;
+            height: 100%; }
+            .banner .center .show .banner-adress .ban-de .ban-ul {
+              width: 100%;
+              height: 700px; }
+              .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo {
+                width: 100%;
+                height: 100%; }
+                .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list {
+                  display: block;
+                  width: 300px;
+                  height: 360px;
+                  margin-left: 70px; }
+                  .banner .center .show .banner-adress .ban-de .ban-ul .banner-demo .demo-list:nth-child(3) {
+                    margin-left: 220px;
+                    margin-top: -30px; }
+      .banner .center .commodity {
+        position: relative;
+        width: 768px;
+        height: 1800px;
+        margin-top: 50px; }
+        .banner .center .commodity .com-span {
+          width: 100%;
+          height: 150px; }
+          .banner .center .commodity .com-span .msg {
+            position: absolute;
+            left: 0;
+            top: 30px;
+            line-height: 0; }
+          .banner .center .commodity .com-span .text {
+            position: absolute;
+            left: 0;
+            top: 55px;
+            line-height: 0; }
+          .banner .center .commodity .com-span .mouse {
+            position: absolute;
+            left: 0;
+            top: 75px; }
+          .banner .center .commodity .com-span .trick {
+            position: absolute;
+            right: 0;
+            top: 45px;
+            display: block;
+            width: 150px; }
+        .banner .center .commodity .household {
+          width: 100%;
+          height: 300px;
+          margin-top: -50px; }
+          .banner .center .commodity .household .picture {
+            margin-top: 20px; }
+            .banner .center .commodity .household .picture:nth-child(4) {
+              margin-left: 180px; }
+      .banner .center .area {
+        position: relative;
+        width: 768px;
+        height: 800px; }
+        .banner .center .area .msg {
+          position: absolute;
+          left: 0;
+          top: 50px;
+          line-height: 0; }
+        .banner .center .area .text {
+          position: absolute;
+          top: 80px;
+          left: 0;
+          line-height: 0; }
+        .banner .center .area .mouse {
+          position: absolute;
+          left: 0;
+          top: 95px; }
+        .banner .center .area .trick {
+          position: absolute;
+          right: 0;
+          top: 95px;
+          width: 150px; }
+        .banner .center .area .serve {
+          position: absolute;
+          left: 0;
+          top: 150px;
+          width: 768px; }
+          .banner .center .area .serve .s-text {
+            position: absolute;
+            left: 0; }
+          .banner .center .area .serve .s-eng {
+            position: absolute;
+            left: 0; }
+          .banner .center .area .serve .f-box {
+            position: absolute;
+            left: 135px;
+            bottom: -50px;
+            width: 600px;
+            height: 400px; }
+      .banner .center .licker {
+        position: relative;
+        width: 100%;
+        height: 1400px; }
+        .banner .center .licker .viruses {
+          position: absolute;
+          left: 100px; }
+        .banner .center .licker .l-box {
+          position: absolute;
+          left: 100px;
+          top: 500px; }
+        .banner .center .licker .l-box1 {
+          position: absolute;
+          left: 400px;
+          top: 500px; }
+        .banner .center .licker .xx-box {
+          position: absolute;
+          left: 100px;
+          top: 800px; }
+      .banner .center .last {
+        position: relative;
+        width: 100%;
+        height: 1000px; }
+        .banner .center .last .last-logo {
+          position: absolute;
+          left: 140px;
+          top: 200px; }
+        .banner .center .last .last-msg {
+          position: absolute;
+          left: 20px;
+          bottom: 150px; }
+
+  .end {
+    width: 768px;
+    height: 100px; }
+    .end .end-msg {
+      position: relative;
+      width: 100%; }
+      .end .end-msg .end-ware {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 200px; }
+        .end .end-msg .end-ware .end-box {
+          position: absolute;
+          left: 20px; }
+      .end .end-msg .end-adress {
+        position: absolute;
+        top: 40px;
+        left: 230px;
+        width: 330px; }
+        .end .end-msg .end-adress > p {
+          margin-left: 20px; }
+      .end .end-msg .end-phone {
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        width: 250px; }
+        .end .end-msg .end-phone > p {
+          margin-left: 20px; } }
+
+/*# sourceMappingURL=small.css.map */

@@ -1,0 +1,896 @@
+@import "rest.scss";
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 99;
+    overflow: hidden;
+
+    .Navigation {
+        position: relative;
+        width: 1200px;
+        height: 100px;
+        background-color: #fff;
+        margin: 0 auto;
+
+        .Label {
+            position: absolute;
+            top: 0;
+            right: 50px;
+            margin-top: 30px;
+            margin-left: 0;
+
+            .item {
+                display: block;
+                width: 40px;
+                height: 25px;
+                float: left;
+                margin-left: 80px;
+            }
+            .vul {
+                font-size: 16px;
+                color: #767676;
+            }
+
+            :hover {
+                color: #668aca;
+                font-size: 18px;
+                border-bottom: 1px solid #668aca;
+            }
+        }
+
+    }
+
+}
+.logo{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    .logo-bac{
+        width: 1200px;
+        height: 300px;
+        margin: 0 auto;
+        background: url(../img/XM-logo.png) no-repeat center;
+        margin-top: 100px;
+        // overflow: hidden;
+    }
+}
+.banner{
+    width: 100%;
+    height: 3335px;
+    .banner-head{
+         width: 1200px;
+         height: 100%;
+         margin: 0 auto;
+         .banner-bad{
+             position: relative;
+             width: 100%;
+             height: 1020px;
+             overflow: hidden;
+              .domo-box {
+                  width: 180px;
+                  height: 20px;
+                  line-height: 40px;
+                  margin-top: 30px;
+
+                  .domo-msg {
+                      color: #767676;
+                      font-size: 14px;
+                  }
+
+                  .domo-trick {
+                      margin-left: 95px;
+                      margin-top: -42px;
+                  }
+
+                  .domo-news {
+                      font-size: 14px;
+                      margin-left: 115px;
+                      margin-top: -38px;
+
+                      a {
+                          color: #7a9ad1;
+                      }
+                  }
+              }
+              .banner-adress{
+                  position: absolute;
+                  top: 30px;
+                  right: 0;
+                 height: 25px;
+                 width: 600px;
+                 margin-right: -130px;
+                //  background-color: #668aca; 
+                 overflow: hidden;
+                .banner-list{
+                    float: left;
+                    display: block;
+                    width: 100px;
+                    height: 100%;
+                    text-align: center;
+                   &:nth-child(2){
+                       border-left: 1px solid #767676;
+                       border-right: 1px solid #767676;
+                   }
+                   &:nth-child(3) {
+                       border-left: 1px solid #767676;
+                       border-right: 1px solid #767676;
+                   }
+                   &:nth-child(4) {
+                       border-left: 1px solid #767676;
+                       border-right: 1px solid #767676;
+                   }
+                   >a{
+                       color: #767676;
+                       font-size: 14px;
+                       &:hover{
+                           border-bottom: 1px solid #668aca;
+                           color: #668aca
+                       }
+                   } 
+                }
+              }
+               .total {
+                   display: block;
+                   width: 100%;
+                   height: 100%;
+                   overflow: hidden;
+
+                   .total-list {
+                       position: relative;
+                       float: left;
+                       display: block;
+                       width: 350px;
+                       height: 300px;
+                       margin-left: 35px;
+                       margin-top: 90px;
+
+                       .total-msg {
+                           font-size: 16px;
+                           color: #767676;
+                           span {
+                               text-align: left;
+                               margin-left: 50px;
+                           }
+                       }
+
+                       .active {
+                           position: absolute;
+                           top: 0px;
+                           left: 0px;
+                           display: none;
+                           width: 360px;
+                           height: 320px;
+                           border-radius: 10px;
+                           background: rgba(0, 0, 0, 0.5);
+
+                           .active-trick {
+                               position: absolute;
+                               top: 120px;
+                               display: block;
+                               width: 80px;
+                               height: 2px;
+                               background-color: #f8f8f8;
+                           }
+
+                           .active-msg {
+                               position: absolute;
+                               top: 95px;
+                               left: 100px;
+                               font-size: 35px;
+                               color: #f8f8f8;
+                           }
+                       }
+
+                       &:hover {
+                           .active {
+                               display: block;
+                           }
+
+                           .total-msg {
+                               position: absolute;
+                               top: 200px;
+                               line-height: 30px;
+                               color: black;
+                           }
+                       }
+                   }
+               }
+         }
+         .banner-sofa{
+             position: relative;
+             width: 100%;
+             height: 550px;
+             overflow: hidden;
+             margin-top: 50px;
+              .domo-box {
+                  width: 180px;
+                  height: 20px;
+                  line-height: 40px;
+                  margin-top: 30px;
+
+                  .domo-msg {
+                      color: #767676;
+                      font-size: 14px;
+                  }
+
+                  .domo-trick {
+                      margin-left: 95px;
+                      margin-top: -42px;
+                  }
+
+                  .domo-news {
+                      font-size: 14px;
+                      margin-left: 115px;
+                      margin-top: -38px;
+
+                      a {
+                          color: #7a9ad1;
+                      }
+                  }
+              }
+               .banner-adress {
+                   position: absolute;
+                   top: 30px;
+                   right: 0;
+                   height: 25px;
+                   width: 600px;
+                   margin-right: -130px;
+                   //  background-color: #668aca; 
+                   overflow: hidden;
+
+                   .banner-list {
+                       float: left;
+                       display: block;
+                       width: 100px;
+                       height: 100%;
+                       text-align: center;
+
+                       &:nth-child(2) {
+                           border-left: 1px solid #767676;
+                           border-right: 1px solid #767676;
+                       }
+
+                       &:nth-child(3) {
+                           border-left: 1px solid #767676;
+                           border-right: 1px solid #767676;
+                       }
+
+                       &:nth-child(4) {
+                           border-left: 1px solid #767676;
+                           border-right: 1px solid #767676;
+                       }
+
+                       >a {
+                           color: #767676;
+                           font-size: 14px;
+
+                           &:hover {
+                               border-bottom: 1px solid #668aca;
+                               color: #668aca;
+                           }
+                       }
+                   }
+               }
+                .total {
+                    display: block;
+                    width: 100%;
+                    height: 500px;
+                    overflow: hidden;
+                    margin-top: 30px;
+                   
+                    .total-list {
+                        position: relative;
+                        float: left;
+                        display: block;
+                        width: 350px;
+                        height: 320px;
+                        margin-left: 35px;
+                        >img{
+                            width: 350px;
+                            height: 100%;
+                        }
+
+                        .total-msg {
+                            width: 350px;
+                            height: 75px;
+                            font-size: 16px;
+                            color: #767676;
+                            span {
+                                text-align: center;
+                                margin-left: 100px;
+                            }
+                        }
+
+                        .active {
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            display: none;
+                            width: 360px;
+                            height: 280px;
+                            border-radius: 10px;
+                            background: rgba(0, 0, 0, 0.5);
+
+                            .active-trick {
+                                position: absolute;
+                                top: 120px;
+                                display: block;
+                                width: 80px;
+                                height: 2px;
+                                background-color: #f8f8f8;
+                            }
+
+                            .active-msg {
+                                position: absolute;
+                                top: 95px;
+                                left: 100px;
+                                font-size: 35px;
+                                color: #f8f8f8;
+                            }
+                        }
+
+                        &:hover {
+                            .active {
+                                display: block;
+                            }
+
+                            .total-msg {
+                                position: absolute;
+                                top: 200px;
+                                line-height: 30px;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+             
+         }
+         .banner-chair {
+             position: relative;
+             width: 100%;
+             height: 500px;
+             overflow: hidden;
+             margin-top: 50px;
+
+             .domo-box {
+                 width: 180px;
+                 height: 20px;
+                 line-height: 40px;
+                 margin-top: 30px;
+
+                 .domo-msg {
+                     color: #767676;
+                     font-size: 14px;
+                 }
+
+                 .domo-trick {
+                     margin-left: 95px;
+                     margin-top: -42px;
+                 }
+
+                 .domo-news {
+                     font-size: 14px;
+                     margin-left: 115px;
+                     margin-top: -38px;
+
+                     a {
+                         color: #7a9ad1;
+                     }
+                 }
+             }
+
+             .banner-adress {
+                 position: absolute;
+                 top: 30px;
+                 right: 0;
+                 height: 25px;
+                 width: 600px;
+                 margin-right: -130px;
+                 //  background-color: #668aca; 
+                 overflow: hidden;
+
+                 .banner-list {
+                     float: left;
+                     display: block;
+                     width: 100px;
+                     height: 100%;
+                     text-align: center;
+
+                     &:nth-child(2) {
+                         border-left: 1px solid #767676;
+                         border-right: 1px solid #767676;
+                     }
+
+                     &:nth-child(3) {
+                         border-left: 1px solid #767676;
+                         border-right: 1px solid #767676;
+                     }
+
+                     &:nth-child(4) {
+                         border-left: 1px solid #767676;
+                         border-right: 1px solid #767676;
+                     }
+
+                     >a {
+                         color: #767676;
+                         font-size: 14px;
+
+                         &:hover {
+                             border-bottom: 1px solid #668aca;
+                             color: #668aca;
+                         }
+                     }
+                 }
+             }
+
+             .total {
+                 display: block;
+                 width: 100%;
+                 height: 500px;
+                 overflow: hidden;
+                 margin-top: 50px;
+
+                 .total-list {
+                     position: relative;
+                     float: left;
+                     display: block;
+                     width: 350px;
+                     height: 320px;
+                     margin-left: 35px;
+
+                     >img {
+                         width: 350px;
+                         height: 100%;
+                     }
+
+                     .total-msg {
+                         width: 350px;
+                         height: 75px;
+                         font-size: 16px;
+                         color: #767676;
+
+                         span {
+                             text-align: center;
+                             margin-left: 100px;
+                         }
+                     }
+
+                     .active {
+                         position: absolute;
+                         top: 0px;
+                         left: 0px;
+                         display: none;
+                         width: 360px;
+                         height: 280px;
+                         border-radius: 10px;
+                         background: rgba(0, 0, 0, 0.5);
+
+                         .active-trick {
+                             position: absolute;
+                             top: 120px;
+                             display: block;
+                             width: 80px;
+                             height: 2px;
+                             background-color: #f8f8f8;
+                         }
+
+                         .active-msg {
+                             position: absolute;
+                             top: 95px;
+                             left: 100px;
+                             font-size: 35px;
+                             color: #f8f8f8;
+                         }
+                     }
+
+                     &:hover {
+                         .active {
+                             display: block;
+                         }
+
+                         .total-msg {
+                             position: absolute;
+                             top: 200px;
+                             line-height: 30px;
+                             color: black;
+                         }
+                     }
+                 }
+             }
+
+         }
+         .banner-box {
+             position: relative;
+             width: 100%;
+             height: 500px;
+             overflow: hidden;
+              margin-top: 50px;
+             .domo-box {
+                 width: 180px;
+                 height: 20px;
+                 line-height: 40px;
+                 margin-top: 50px;
+
+                 .domo-msg {
+                     color: #767676;
+                     font-size: 14px;
+                 }
+
+                 .domo-trick {
+                     margin-left: 95px;
+                     margin-top: -42px;
+                 }
+
+                 .domo-news {
+                     font-size: 14px;
+                     margin-left: 115px;
+                     margin-top: -38px;
+
+                     a {
+                         color: #7a9ad1;
+                     }
+                 }
+             }
+
+             .banner-adress {
+                 position: absolute;
+                 top: 30px;
+                 right: 0;
+                 height: 25px;
+                 width: 600px;
+                 margin-right: -130px;
+                 //  background-color: #668aca; 
+                 overflow: hidden;
+
+                 .banner-list {
+                     float: left;
+                     display: block;
+                     width: 100px;
+                     height: 100%;
+                     text-align: center;
+
+                     &:nth-child(2) {
+                         border-left: 1px solid #767676;
+                         border-right: 1px solid #767676;
+                     }
+
+                     &:nth-child(3) {
+                         border-left: 1px solid #767676;
+                         border-right: 1px solid #767676;
+                     }
+
+                     &:nth-child(4) {
+                         border-left: 1px solid #767676;
+                         border-right: 1px solid #767676;
+                     }
+
+                     >a {
+                         color: #767676;
+                         font-size: 14px;
+
+                         &:hover {
+                             border-bottom: 1px solid #668aca;
+                             color: #668aca;
+                         }
+                     }
+                 }
+             }
+
+             .total {
+                 display: block;
+                 width: 100%;
+                 height: 500px;
+                 overflow: hidden;
+                 margin-top: 50px;
+
+                 .total-list {
+                     position: relative;
+                     float: left;
+                     display: block;
+                     width: 350px;
+                     height: 320px;
+                     margin-left: 35px;
+
+                     >img {
+                         width: 350px;
+                         height: 100%;
+                     }
+
+                     .total-msg {
+                         width: 350px;
+                         height: 75px;
+                         font-size: 16px;
+                         color: #767676;
+
+                         span {
+                             text-align: center;
+                             margin-left: 100px;
+                         }
+                     }
+
+                     .active {
+                         position: absolute;
+                         top: 0px;
+                         left: 0px;
+                         display: none;
+                         width: 360px;
+                         height: 280px;
+                         border-radius: 10px;
+                         background: rgba(0, 0, 0, 0.5);
+
+                         .active-trick {
+                             position: absolute;
+                             top: 120px;
+                             display: block;
+                             width: 80px;
+                             height: 2px;
+                             background-color: #f8f8f8;
+                         }
+
+                         .active-msg {
+                             position: absolute;
+                             top: 95px;
+                             left: 100px;
+                             font-size: 35px;
+                             color: #f8f8f8;
+                         }
+                     }
+
+                     &:hover {
+                         .active {
+                             display: block;
+                         }
+
+                         .total-msg {
+                             position: absolute;
+                             top: 200px;
+                             line-height: 30px;
+                             color: black;
+                         }
+                     }
+                 }
+             }
+
+         }
+         .banner-light {
+             position: relative;
+             width: 100%;
+             height: 500px;
+             overflow: hidden;
+             margin-top: 50px;
+             .domo-box {
+                 width: 180px;
+                 height: 20px;
+                 line-height: 40px;
+                 margin-top: 50px;
+
+                 .domo-msg {
+                     color: #767676;
+                     font-size: 14px;
+                 }
+
+                 .domo-trick {
+                     margin-left: 95px;
+                     margin-top: -42px;
+                 }
+
+                 .domo-news {
+                     font-size: 14px;
+                     margin-left: 115px;
+                     margin-top: -38px;
+
+                     a {
+                         color: #7a9ad1;
+                     }
+                 }
+             }
+
+             .banner-adress {
+                 position: absolute;
+                 top: 30px;
+                 right: 0;
+                 height: 25px;
+                 width: 600px;
+                 margin-right: -130px;
+                 //  background-color: #668aca; 
+                 overflow: hidden;
+
+                 .banner-list {
+                     float: left;
+                     display: block;
+                     width: 100px;
+                     height: 100%;
+                     text-align: center;
+
+                     &:nth-child(2) {
+                         border-left: 1px solid #767676;
+                         border-right: 1px solid #767676;
+                     }
+
+                     &:nth-child(3) {
+                         border-left: 1px solid #767676;
+                         border-right: 1px solid #767676;
+                     }
+
+                     &:nth-child(4) {
+                         border-left: 1px solid #767676;
+                         border-right: 1px solid #767676;
+                     }
+
+                     >a {
+                         color: #767676;
+                         font-size: 14px;
+
+                         &:hover {
+                             border-bottom: 1px solid #668aca;
+                             color: #668aca;
+                         }
+                     }
+                 }
+             }
+
+             .total {
+                 display: block;
+                 width: 100%;
+                 height: 500px;
+                 overflow: hidden;
+                 margin-top: 50px;
+
+                 .total-list {
+                     position: relative;
+                     float: left;
+                     display: block;
+                     width: 350px;
+                     height: 320px;
+                     margin-left: 35px;
+
+                     >img {
+                         width: 350px;
+                         height: 100%;
+                     }
+
+                     .total-msg {
+                         width: 350px;
+                         height: 75px;
+                         font-size: 16px;
+                         color: #767676;
+
+                         span {
+                             text-align: center;
+                             margin-left: 100px;
+                         }
+                     }
+
+                     .active {
+                         position: absolute;
+                         top: 0px;
+                         left: 0px;
+                         display: none;
+                         width: 360px;
+                         height: 280px;
+                         border-radius: 10px;
+                         background: rgba(0, 0, 0, 0.5);
+
+                         .active-trick {
+                             position: absolute;
+                             top: 120px;
+                             display: block;
+                             width: 80px;
+                             height: 2px;
+                             background-color: #f8f8f8;
+                         }
+
+                         .active-msg {
+                             position: absolute;
+                             top: 95px;
+                             left: 100px;
+                             font-size: 35px;
+                             color: #f8f8f8;
+                         }
+                     }
+
+                     &:hover {
+                         .active {
+                             display: block;
+                         }
+
+                         .total-msg {
+                             position: absolute;
+                             top: 200px;
+                             line-height: 30px;
+                             color: black;
+                         }
+                     }
+                 }
+             }
+
+         }
+    }
+}
+.end {
+    width: 100%;
+    height: 263px;
+    background-color: #f7f7f7;
+
+    .end-msg {
+        position: relative;
+        width: 1200px;
+        height: 100%;
+        // background-color: #f7f;
+        margin: 0 auto;
+
+        .end-ware {
+            position: absolute;
+            left: 0;
+            top: 100px;
+            width: 385px;
+            height: 85px;
+            background-color: #f7f7f7;
+
+            p {
+                font-size: 16px;
+                color: #767676;
+                text-align: center;
+                line-height: 50px;
+            }
+
+            .end-box {
+                position: absolute;
+                left: 110px;
+                width: 200px;
+                height: 25px;
+
+                .end-item {
+
+                    float: left;
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 20px;
+                }
+            }
+
+        }
+
+        .end-adress {
+            position: absolute;
+            left: 385px;
+            top: 100px;
+            width: 433px;
+            height: 85px;
+            background-color: #f7f7f7;
+            border-left: 1px solid #767676;
+
+            p {
+
+                font-size: 14px;
+                color: #767676;
+                line-height: 30px;
+                text-align: left;
+                margin-left: 100px;
+            }
+        }
+
+        .end-phone {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width: 382px;
+            height: 85px;
+            background-color: #f7f7f7;
+            border-left: 1px solid #767676;
+
+            p {
+
+                font-size: 14px;
+                color: #767676;
+                line-height: 30px;
+                text-align: left;
+                margin-left: 60px;
+            }
+        }
+    }
+}

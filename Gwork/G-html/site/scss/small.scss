@@ -1,0 +1,352 @@
+@media(max-width: 768px) {
+    .header {
+        height: 80px;
+        width: 100%;
+
+        .Navigation {
+            position: relative;
+            height: 100%;
+            width: 100%;
+
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 150px;
+            }
+            .list {
+                position: absolute;
+                right: 40px;
+                top: 20px;
+                display: block;
+                width: 40px;
+                height: 40px;
+                background: url(../img/heng.png) no-repeat center;
+            }
+            .Label{
+                display: none;
+            }
+
+            .mobile {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 50%;
+                height: 350px;
+                background-color: #fff;
+                overflow: hidden;
+
+                .item {
+                    margin-top: 20px;
+                    margin-left: -10px;
+                    font-size: 16px;
+                    color: #767676;
+                    line-height: 50px;
+                    text-align: center;
+                    border: none;
+                    float: none;
+                    .vul{
+                        color: #767676;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo {
+        height: 400px;
+        width: 768px;
+
+        img {
+            height: 400px;
+            width: 768px;
+        }
+    }
+
+    .banner {
+        width: 100%;
+
+        .center {
+            width: 100%;
+
+            .show {
+                position: relative;
+                width: 768px;
+                height: 850px;
+
+                .msg {
+                    position: absolute;
+                    left: 0;
+                    top: 30px;
+                    line-height: 0;
+                }
+
+                .text {
+                    position: absolute;
+                    left: 0;
+                    top: 45px;
+                    line-height: 20px;
+                }
+
+                .mouse {
+                    position: absolute;
+                    top: 65px;
+                    left: 0;
+                }
+
+                .trick {
+                    position: absolute;
+                    right: 0;
+                    top: 45px;
+                    display: block;
+                    width: 150px;
+                }
+
+                .banner-adress {
+                    width: 768px;
+                    height: 750px;
+
+                    .ban-box {
+                        width: 500px;
+                        height: 35px;
+                        margin-left: -130px;
+                    }
+
+                    .ban-de {
+                        width: 768px;
+                        height: 100%;
+
+                        .ban-ul {
+                            width: 100%;
+                            height: 700px;
+
+                            .banner-demo {
+                                width: 100%;
+                                height: 100%;
+
+                                .demo-list {
+                                    display: block;
+                                    width: 300px;
+                                    height: 360px;
+                                    margin-left: 70px;
+
+                                    &:nth-child(3) {
+                                        margin-left: 220px;
+                                        margin-top: -30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .commodity {
+                position: relative;
+                width: 768px;
+                height: 1800px;
+                margin-top: 50px;
+
+                .com-span {
+                    width: 100%;
+                    height: 150px;
+
+                    .msg {
+                        position: absolute;
+                        left: 0;
+                        top: 30px;
+                        line-height: 0;
+                    }
+
+                    .text {
+                        position: absolute;
+                        left: 0;
+                        top: 55px;
+                        line-height: 0;
+                    }
+
+                    .mouse {
+                        position: absolute;
+                        left: 0;
+                        top: 75px;
+                    }
+
+                    .trick {
+                        position: absolute;
+                        right: 0;
+                        top: 45px;
+                        display: block;
+                        width: 150px;
+                    }
+                }
+
+                .household {
+                    width: 100%;
+                    height: 300px;
+                    margin-top: -50px;
+
+                    .picture {
+                        margin-top: 20px;
+
+                        &:nth-child(4) {
+                            margin-left: 180px;
+                        }
+                    }
+                }
+            }
+
+            .area {
+                position: relative;
+                width: 768px;
+                height: 800px;
+
+                .msg {
+                    position: absolute;
+                    left: 0;
+                    top: 50px;
+                    line-height: 0;
+                }
+
+                .text {
+                    position: absolute;
+                    top: 80px;
+                    left: 0;
+                    line-height: 0;
+                }
+
+                .mouse {
+                    position: absolute;
+                    left: 0;
+                    top: 95px;
+                }
+
+                .trick {
+                    position: absolute;
+                    right: 0;
+                    top: 95px;
+                    width: 150px;
+                }
+
+                .serve {
+                    position: absolute;
+                    left: 0;
+                    top: 150px;
+                    width: 768px;
+
+                    .s-text {
+                        position: absolute;
+                        left: 0;
+                    }
+
+                    .s-eng {
+                        position: absolute;
+                        left: 0;
+                    }
+
+                    .f-box {
+                        position: absolute;
+                        left: 135px;
+                        bottom: -50px;
+                        width: 600px;
+                        height: 400px;
+                    }
+                }
+
+            }
+
+            .licker {
+                position: relative;
+                width: 100%;
+                height: 1400px;
+
+                .viruses {
+                    position: absolute;
+                    left: 100px;
+                }
+
+                .l-box {
+                    position: absolute;
+                    left: 100px;
+                    top: 500px;
+                }
+
+                .l-box1 {
+                    position: absolute;
+                    left: 400px;
+                    top: 500px;
+                }
+
+                .xx-box {
+                    position: absolute;
+                    left: 100px;
+                    top: 800px;
+                }
+            }
+
+            .last {
+                position: relative;
+                width: 100%;
+                height: 1000px;
+
+                .last-logo {
+                    position: absolute;
+                    left: 140px;
+                    top: 200px;
+                }
+
+                .last-msg {
+                    position: absolute;
+                    left: 20px;
+                    bottom: 150px;
+                }
+            }
+        }
+    }
+
+    .end {
+        width: 768px;
+        height: 100px;
+
+        .end-msg {
+            position: relative;
+            width: 100%;
+
+            .end-ware {
+                position: absolute;
+                top: 40px;
+                left: 0;
+                width: 200px;
+
+                .end-box {
+                    position: absolute;
+                    left: 20px;
+                }
+            }
+
+            .end-adress {
+                position: absolute;
+                top: 40px;
+                left: 230px;
+                width: 330px;
+
+                >p {
+                    margin-left: 20px;
+                }
+            }
+
+            .end-phone {
+                position: absolute;
+                top: 40px;
+                right: 0px;
+                width: 250px;
+
+                >p {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+}

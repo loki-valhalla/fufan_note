@@ -71,19 +71,7 @@
 			el: '#app',
 			data: {
 				title: 'TODOSss',
-				todos: [
-					// {
-					// 	id: guid(),
-					// 	text: '洗脸',
-					// 	completed: false,
-					// },
-					// {
-					// 	id: guid(),
-					// 	text: '刷牙',
-					// 	// 显示被确认的样式
-					// 	completed: false,
-					// }
-				],
+				todos: [],   //输入保存进入
 				newTodo: '', //新加入的数组
 				editOne: '',  //判断开启编辑
 				todoAll:false , // 判断全部
@@ -132,6 +120,7 @@
 					// 	}
 					// }
 					// this.todos.splice(index,1)
+
 					this.todos.map((item, i) => {
 						if (item.id == id) {
 							this.todos.splice(i, 1);

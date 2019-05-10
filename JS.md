@@ -39,7 +39,7 @@
 
 + boolean 布尔数据  后面写true或false 打印后是boolean;
   
-   {var sex = true; 打印后是true;
+   var sex = true; 打印后是true;
    var sex = false 打印后是false;
   
 + undefined    变量未初始化,报错
@@ -288,11 +288,12 @@ switch(变量N){
 ### 自增自减
 
 + var i  = 10;
-  var a = i++; console.log(a); a= 10;
-  var b = ++i  console.log(b); b= 11;
+   - var a = i++; console.log(a); a= 10;
+   - var b = ++i  console.log(b); b= 11;
 
-+ 原理:i++,i先参与运算,在执行++
-       ++i, ++先执行,在参与运算
++ 原理:
+    - i++,i先参与运算,在执行++
+    - ++i, ++先执行,在参与运算
 
 ### while语句
 

@@ -1,0 +1,463 @@
+@import "rest.scss";
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 99;
+    overflow: hidden;
+
+    .Navigation {
+        position: relative;
+        width: 1200px;
+        height: 100px;
+        background-color: #fff;
+        margin: 0 auto;
+
+        .Label {
+            position: absolute;
+            top: 0;
+            right: 50px;
+            margin-top: 30px;
+            margin-left: 0;
+
+            .item {
+                display: block;
+                width: 40px;
+                height: 25px;
+                float: left;
+                margin-left: 80px;
+            }
+
+            .vul {
+                font-size: 16px;
+                color: #767676;
+            }
+
+            :hover {
+                color: #668aca;
+                font-size: 18px;
+                border-bottom: 1px solid #668aca;
+            }
+        }
+
+    }
+
+}
+.banner {
+    width: 100%;
+    height: 1430px;
+    // background-color: aquamarine;
+    overflow: hidden;
+
+    .domo {
+        position: relative;
+        width: 1200px;
+        height: 100%;
+        // background-color: yellowgreen;
+        margin: 0 auto;
+        margin-top: 100px;
+
+        .domo-box {
+            width: 180px;
+            height: 20px;
+            line-height: 40px;
+
+            .domo-msg {
+                color: #767676;
+                font-size: 14px;
+            }
+
+            .domo-trick {
+                margin-left: 95px;
+                margin-top: -42px;
+            }
+
+            .domo-news {
+                font-size: 14px;
+                margin-left: 115px;
+                margin-top: -38px;
+
+                a {
+                    color: #7a9ad1;
+                }
+            }
+        }
+        .domo-team{
+            width: 180px;
+            height: 50px;
+            margin-top: 40px;
+            .domo-el{
+                font-size: 18px;
+                color: #767676;
+            }
+            .domo-el1{
+                color: #6b6b6b;
+                font-size: 12px;
+            }
+            .domo-lis{
+                display: block;
+                width: 30px;
+                height: 1px;
+                background-color: #6b6b6b;
+            }
+        }
+        .domo-photo{
+            position: relative;
+            width: 1200px;
+            height: 200px;
+            margin-top: 30px;
+            // overflow: hidden;
+            .domo-peo1{
+                position: absolute;
+                top: 0;
+                left: 0px;
+                width: 540px;
+                height: 200px;
+                .peo1-photo{
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    background: url(../img/GYY-1.png) no-repeat center;
+                    border-radius: 10px;
+                }
+               .photo-all{
+                   position: absolute;
+                   top: 35px;
+                   left: 230px;
+                   width: 320px;
+                   height: 100%;
+                    .photo-name {
+                        font-size: 18px;
+                        color: #6b6b6b;
+                    }
+
+                    .photo-add {
+                        font-size: 14px;
+                        color: #6b6b6b;
+                        margin-bottom: 15px;
+                    }
+
+                    .photo-msg {
+                        font-size: 12px;
+                        color: #6b6b6b;
+                        line-height: 20px;
+                    }
+                    .photo-into{
+                        position: absolute;
+                        bottom: 65px;
+                        width: 60px;
+                        height: 1px;
+                        background-color: #767676;
+                    }
+               }
+            }
+            .domo-peo2 {
+                position: absolute;
+                left: 600px;
+                width: 540px;
+                height: 200px;
+
+                .peo1-photo {
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    background: url(../img/GYY-2.png) no-repeat center;
+                    border-radius: 10px;
+                }
+
+                .photo-all {
+                    position: absolute;
+                    top: 35px;
+                    left: 230px;
+                    width: 320px;
+                    height: 100%;
+
+                    .photo-name {
+                        font-size: 18px;
+                        color: #6b6b6b;
+                    }
+
+                    .photo-add {
+                        font-size: 14px;
+                        color: #6b6b6b;
+                        margin-bottom: 15px;
+                    }
+
+                    .photo-msg {
+                        font-size: 12px;
+                        color: #6b6b6b;
+                        line-height: 20px;
+                    }
+                      .photo-into {
+                          position: absolute;
+                          bottom: 65px;
+                          width: 60px;
+                          height: 1px;
+                          background-color: #767676;
+                      }
+                }
+            }
+        }
+        .domo-photo1 {
+            position: relative;
+            width: 1200px;
+            height: 200px;
+            margin-top: 30px;
+
+            // overflow: hidden;
+            .domo-peo1 {
+                position: absolute;
+                top: 0;
+                left: 0px;
+                width: 540px;
+                height: 200px;
+
+                .peo1-photo {
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    background: url(../img/GYY-3.png) no-repeat center;
+                    border-radius: 10px;
+                }
+
+                .photo-all {
+                    position: absolute;
+                    top: 35px;
+                    left: 230px;
+                    width: 320px;
+                    height: 100%;
+
+                    .photo-name {
+                        font-size: 18px;
+                        color: #6b6b6b;
+                    }
+
+                    .photo-add {
+                        font-size: 14px;
+                        color: #6b6b6b;
+                        margin-bottom: 15px;
+                    }
+
+                    .photo-msg {
+                        font-size: 12px;
+                        color: #6b6b6b;
+                        line-height: 20px;
+                    }
+
+                    .photo-into {
+                        position: absolute;
+                        bottom: 65px;
+                        width: 60px;
+                        height: 1px;
+                        background-color: #767676;
+                    }
+                }
+            }
+
+            .domo-peo2 {
+                position: absolute;
+                left: 600px;
+                width: 540px;
+                height: 200px;
+
+                .peo1-photo {
+                    display: block;
+                    width: 200px;
+                    height: 200px;
+                    background: url(../img/GYY-4.png) no-repeat center;
+                    border-radius: 10px;
+                }
+
+                .photo-all {
+                    position: absolute;
+                    top: 35px;
+                    left: 230px;
+                    width: 320px;
+                    height: 100%;
+
+                    .photo-name {
+                        font-size: 18px;
+                        color: #6b6b6b;
+                    }
+
+                    .photo-add {
+                        font-size: 14px;
+                        color: #6b6b6b;
+                        margin-bottom: 15px;
+                    }
+
+                    .photo-msg {
+                        font-size: 12px;
+                        color: #6b6b6b;
+                        line-height: 20px;
+                    }
+
+                    .photo-into {
+                        position: absolute;
+                        bottom: 65px;
+                        width: 60px;
+                        height: 1px;
+                        background-color: #767676;
+                    }
+                }
+            }
+        }
+        .domo-fpx{
+            position: relative;
+            width: 1200px;
+            height: 400px;
+            // background-color: #7a9ad1;
+            margin-top: 100px;
+            .domo-team {
+                width: 600px;
+                height: 200px;
+                margin-top: 40px;
+
+                .domo-el {
+                    font-size: 18px;
+                    color: #767676;
+                }
+
+                .domo-el1 {
+                    color: #6b6b6b;
+                    font-size: 12px;
+                }
+
+                .domo-lis {
+                    display: block;
+                    width: 30px;
+                    height: 1px;
+                    background-color: #6b6b6b;
+                }
+                .domo-list{
+                    margin-top: 25px;
+                    color: #989898;
+                    font-size: 14px;
+                    line-height: 30px;
+                }
+            }
+            .domo-team1{
+                width: 600px;
+                height: 135px;
+                margin-top: 80px;
+                .domo-el {
+                    font-size: 18px;
+                    color: #767676;
+                }
+
+                .domo-el1 {
+                    color: #6b6b6b;
+                    font-size: 12px;
+                }
+
+                .domo-lis {
+                    display: block;
+                    width: 30px;
+                    height: 1px;
+                    background-color: #6b6b6b;
+                }
+
+                .domo-list {
+                    margin-top: 25px;
+                    color: #989898;
+                    font-size: 14px;
+                    line-height: 30px;
+                }
+            }
+            .domo-demo{
+                position: absolute;
+                right: 0;
+                bottom: 20px;
+                width: 500px;
+                height: 300px;
+                background: url(../img/GYY-5.png) no-repeat center;
+            }
+        }
+    } 
+}  
+.end {
+    width: 100%;
+    height: 263px;
+    background-color: #f7f7f7;
+
+    .end-msg {
+        position: relative;
+        width: 1200px;
+        height: 100%;
+        // background-color: #f7f;
+        margin: 0 auto;
+
+        .end-ware {
+            position: absolute;
+            left: 0;
+            top: 100px;
+            width: 385px;
+            height: 85px;
+            background-color: #f7f7f7;
+
+            p {
+                font-size: 16px;
+                color: #767676;
+                text-align: center;
+                line-height: 50px;
+            }
+
+            .end-box {
+                position: absolute;
+                left: 110px;
+                width: 200px;
+                height: 25px;
+
+                .end-item {
+
+                    float: left;
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 20px;
+                }
+            }
+
+        }
+
+        .end-adress {
+            position: absolute;
+            left: 385px;
+            top: 100px;
+            width: 433px;
+            height: 85px;
+            background-color: #f7f7f7;
+            border-left: 1px solid #767676;
+
+            p {
+
+                font-size: 14px;
+                color: #767676;
+                line-height: 30px;
+                text-align: left;
+                margin-left: 100px;
+            }
+        }
+
+        .end-phone {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width: 382px;
+            height: 85px;
+            background-color: #f7f7f7;
+            border-left: 1px solid #767676;
+
+            p {
+
+                font-size: 14px;
+                color: #767676;
+                line-height: 30px;
+                text-align: left;
+                margin-left: 60px;
+            }
+        }
+    }
+}
